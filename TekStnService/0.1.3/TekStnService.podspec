@@ -49,6 +49,8 @@ Pod::Spec.new do |s|
     # dependency
     s.dependency 'TekCoreNetwork', '~> 0.1.1'
     s.dependency 'TekCoreService', '~> 0.1.4'
+    s.dependency 'TekStnServiceInterface', '~> 0.1.1'
+
 
   
   end
