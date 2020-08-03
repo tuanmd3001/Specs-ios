@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
     DESC
     s.homepage     = "https://github.com/tungnx-teko/MinervaCoreDistribution"
     s.license = { :type => 'Copyright', :text => <<-LICENSE
-                   Copyright 2018
+                   Copyright 2020
                    Permission is granted to...
                   LICENSE
                 }
