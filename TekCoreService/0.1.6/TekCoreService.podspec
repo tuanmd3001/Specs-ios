@@ -41,7 +41,6 @@ Pod::Spec.new do |s|
     # s.dependency 'AFNetworking', '~> 2.3'
   
     s.vendored_frameworks = 'TekCoreService.framework'
-    s.static_framework = true
   
     s.public_header_files = 'TekCoreService.framework/Headers/*.h'
     s.source_files = 'TekCoreService.framework/Headers/*.{h, m, swift}'
