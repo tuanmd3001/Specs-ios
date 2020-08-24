@@ -47,7 +47,7 @@ Pod::Spec.new do |s|
     # s.source_files = 'TekCoreNetwork.xcframework/*/TekCoreNetwork.framework/Headers/*.{h, m, swift}'
   
     # dependency
-    s.dependency 'Alamofire', '~> 4.8.2'
+    # s.dependency 'Alamofire', '~> 4.8.2'
   
   
   end
