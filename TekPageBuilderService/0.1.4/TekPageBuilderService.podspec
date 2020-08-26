@@ -21,11 +21,10 @@ Pod::Spec.new do |s|
   TODO: Add long description of the pod here.
                          DESC
   
-    s.homepage         = 'https://github.com/linhvt-teko/TekPageBuilderService-Distribution.git'
-    # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+    s.homepage         = 'https://github.com/teko-vn/Specs-ios.git'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
-    s.author           = { 'linhvt-teko' => 'linh.vt@teko.vn' }
-    s.source           = { :git => 'https://github.com/linhvt-teko/TekPageBuilderService-Distribution.git', :tag => s.version.to_s }
+    s.author           = { '$(git config user.name)' => '$(git config user.email)' }
+    s.source           = { :http => 'http://github.com/teko-vn/Specs-ios/releases/download/' + s.name.to_s + '-v' + s.version.to_s + '/' + s.name.to_s + '.zip' }
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   
     s.ios.deployment_target = '10.0'
@@ -47,9 +46,9 @@ Pod::Spec.new do |s|
     s.name = "TekPageBuilderService"
   
     # dependency
-    s.dependency 'TekCoreNetwork', '~> 0.1.2'
-    s.dependency 'TekCoreService', '~> 0.1.6'
-    s.dependency 'TekServiceInterfaces', '~> 0.1.2'
+    s.dependency 'TekCoreNetwork', '~> 0.1.22'
+    s.dependency 'TekCoreService', '~> 0.1.16'
+    s.dependency 'TekServiceInterfaces'
 
 
   
