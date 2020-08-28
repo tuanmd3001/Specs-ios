@@ -42,10 +42,9 @@ Pod::Spec.new do |s|
   
     s.public_header_files = 'Janus.framework/Headers/*.h'
     s.source_files = 'Janus.framework/Headers/*.{h, m, swift}'
-    s.name = "Janus"
   
     # dependency
-    s.dependency 'TekCoreNetwork', '~> 0.1.28'
+    s.dependency 'TekCoreNetwork', '0.1.28'
     s.dependency 'TekCoreService', '~> 0.1.16'
     s.dependency 'FacebookCore', '~> 0.9.0'
     s.dependency 'FacebookLogin', '~> 0.9.0'
