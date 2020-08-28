@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
-    s.source           = { :http => 'http://github.com/teko-vn/Specs-ios/releases/download/' + s.name.to_s + '-v' + s.version.to_s + '/' + s.name.to_s + '.zip' }
+    s.source           = { :http => 'https://github.com/teko-vn/Specs-ios/releases/download/' + s.name.to_s + '-v' + s.version.to_s + '/' + s.name.to_s + '.zip' }
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   
     s.ios.deployment_target = '10.0'
@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
     s.source_files = 'TekCoreService.framework/Headers/*.{h, m, swift}'
   
     # dependency
-    s.dependency 'TekCoreNetwork', '~> 0.1.22'
+    s.dependency 'TekCoreNetwork', '0.1.28'
 
   
   end
