@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
     s.source_files = 'TekCoreService.framework/Headers/*.{h, m, swift}'
   
     # dependency
-    s.dependency 'TekCoreNetwork', '0.1.28'
+    s.dependency 'TekCoreNetwork', '~> 0.1.28'
 
   
   end
