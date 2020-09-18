@@ -45,10 +45,10 @@ Pod::Spec.new do |s|
   
     # dependency
     s.static_framework = true
-    s.dependency 'SVProgressHUD'
-    s.dependency 'SnapKit'
-    s.dependency 'FirebaseFirestore'
-    s.dependency 'TekCoreNetwork'
-    s.dependency 'TekCoreService'
+    # s.dependency 'SVProgressHUD'
+    # s.dependency 'SnapKit'
+    # s.dependency 'FirebaseFirestore'
+    # s.dependency 'TekCoreNetwork'
+    # s.dependency 'TekCoreService'
   
   end
