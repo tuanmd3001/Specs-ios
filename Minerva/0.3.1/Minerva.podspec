@@ -44,7 +44,6 @@ Pod::Spec.new do |s|
     s.source_files = 'Minerva.framework/Headers/*.{h, m, swift}'
   
     # dependency
-    s.static_framework = true
     # s.dependency 'SVProgressHUD'
     # s.dependency 'SnapKit'
     # s.dependency 'FirebaseFirestore'
