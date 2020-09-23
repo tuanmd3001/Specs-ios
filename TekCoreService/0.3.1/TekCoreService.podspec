@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
     s.name = "TekCoreService"
   
     # dependency
-    s.dependency 'TekCoreNetwork'
+    s.dependency 'TekCoreNetwork', '~> 0.3.0'
 
   
   end
