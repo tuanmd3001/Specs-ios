@@ -44,12 +44,11 @@ TODO: Add long description of the pod here.
   s.source_files = 'Terra.framework/Headers/*.{h, m, swift}'
 
   # dependency
-  s.dependency 'TekCoreNetwork', '~> 0.2.2'
-  s.dependency 'TekCoreService', '~> 0.3.3'
-  s.dependency 'TekServiceInterfaces', '~> 0.2.1'
-  s.dependency 'Janus', '~> 0.3.1'
-  s.dependency 'Minerva', '0.3.0'
-  s.dependency "Codextended"
+  s.dependency 'TekCoreService', '0.4.0'
+  s.dependency 'TekServiceInterfaces', '~> 0.2.6'
+  s.dependency 'Janus', '0.4.0'
+  s.dependency 'Minerva', '0.4.2'
+  s.dependency 'Codextended'
   s.dependency 'CryptoSwift'
 
 end
