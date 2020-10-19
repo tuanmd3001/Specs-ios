@@ -51,6 +51,6 @@ TODO: Add long description of the pod here.
   s.dependency 'Hestia'
   s.dependency 'HestiaIOS'
   s.dependency "Codextended"
-  s.dependency 'CryptoSwift'
+  s.dependency 'CryptoSwift', '1.3.2'
 
 end
