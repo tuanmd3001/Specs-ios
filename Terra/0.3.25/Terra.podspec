@@ -48,9 +48,7 @@ TODO: Add long description of the pod here.
   s.dependency 'TekServiceInterfaces', '~> 0.2.31'
   s.dependency 'Janus', '0.3.26'
   s.dependency 'Minerva', '0.3.35'
-  s.dependency 'Hestia'
-  s.dependency 'HestiaIOS'
-  s.dependency "Codextended"
-  s.dependency 'CryptoSwift', '1.3.2'
+  s.dependency 'Codextended'
+  s.dependency 'CryptoSwift'
 
 end
