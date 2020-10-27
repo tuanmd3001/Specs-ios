@@ -48,6 +48,6 @@ Pod::Spec.new do |s|
 
     s.dependency 'SVProgressHUD'
     s.dependency 'SnapKit'
-    s.dependency 'FirebaseFirestore', '~> 1.19.0'
+    s.dependency 'FirebaseFirestore'
   
   end
