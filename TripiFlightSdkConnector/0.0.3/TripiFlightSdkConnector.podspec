@@ -47,5 +47,6 @@ Pod::Spec.new do |s|
     # s.dependency 'TekCoreNetwork', '0.3.1'
     s.dependency 'Hestia'
     s.dependency 'HestiaIOS'
+    s.dependency 'TripiFlightKit'
   
   end
