@@ -1,14 +1,14 @@
 Pod::Spec.new do |s|
 	s.name                   = 'TripiFlightKit'
-	s.version                = '0.0.1-dev'
+	s.version                = '0.0.1'
 	s.summary                = 'TripiFlightKit.framework'
 	s.homepage               = 'https://github.com/teko-vn/Specs-ios.git'
 	s.license                = { :type => 'MIT', :file => 'LICENSE' }
 
 	s.source                 = { :http => 'https://github.com/teko-vn/Specs-ios/releases/download/TripiFlightKit-v0.0.1-dev/TripiFlightKit.framework.zip' }
-	s.vendored_frameworks    = 'TripiCommon.framework'
-	s.public_header_files    = 'TripiCommon.framework/Headers/*.h'
-	s.source_files           = 'TripiCommon.framework/Headers/*.{h,m,swift}'
+	s.vendored_frameworks    = 'TripiFlightKit.framework'
+	s.public_header_files    = 'TripiFlightKit.framework/Headers/*.h'
+	s.source_files           = 'TripiFlightKit.framework/Headers/*.{h,m,swift}'
 
 	s.author                 = {'Mobile Lab' => 'mobile.lab@teko.vn'}
 
