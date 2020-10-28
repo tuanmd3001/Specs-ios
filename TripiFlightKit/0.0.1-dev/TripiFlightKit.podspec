@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 	s.author                 = {'Mobile Lab' => 'mobile.lab@teko.vn'}
 
 	s.dependency 'Alamofire'
-	s.dependency 'Moya'
+	s.dependency 'Moya/RxSwift'
 	s.dependency 'RxCocoa'
 	s.dependency 'RxSwift'
 	s.dependency 'SwiftyBeaver'
