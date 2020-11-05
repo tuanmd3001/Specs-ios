@@ -21,31 +21,21 @@ Pod::Spec.new do |s|
   TODO: Add long description of the pod here.
                          DESC
   
-        s.homepage         = 'https://github.com/teko-vn/Specs-ios.git'
+    s.homepage         = 'https://github.com/teko-vn/Specs-ios.git'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
-    s.source           = { :http => 'https://github.com/teko-vn/Specs-ios/releases/download/' + s.name.to_s + '-v' + s.version.to_s + '/' + s.name.to_s + '.xcframework.zip' }
-    # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+    s.source           = { :http => 'http://github.com/teko-vn/Specs-ios/releases/download/' + s.name.to_s + '-v' + s.version.to_s + '/' + s.name.to_s + '.xcframework.zip' }
   
-    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-
     s.ios.deployment_target = '10.0'
-  
-    # s.source_files = 'Tekit/Classes/**/*'
-    
-    # s.resource_bundles = {
-    #   'Tekit' => ['Tekit/Assets/*.png']
-    # }
-  
-    # s.public_header_files = 'Pod/Classes/**/*.h'
-    # s.frameworks = 'UIKit', 'MapKit'
-    # s.dependency 'AFNetworking', '~> 2.3'
-  
+
+    # s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    # s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+
+
     s.vendored_frameworks = 'TekCoreNetwork.xcframework'
       
-    s.public_header_files = 'TekCoreNetwork.xcframework/*/TekCoreNetwork.framework/Headers/*.h'
-    s.source_files = 'TekCoreNetwork.xcframework/*/TekCoreNetwork.framework/Headers/*.{h, m, swift}'
+    # s.public_header_files = 'TekCoreNetwork.framework/Headers/*.h'
+    # s.source_files = 'TekCoreNetwork.framework/Headers/*.{h, m, swift}'
   
     # dependency
     s.dependency 'Alamofire', '5.3.0'
