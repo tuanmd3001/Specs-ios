@@ -52,7 +52,7 @@ TODO: Add long description of the pod here.
   s.dependency 'TekCoreService', '1.2.1'
   s.dependency 'TekServiceInterfaces', '~> 0.2.38'
   s.dependency 'Janus', '1.2.3'
-  s.dependency 'Minerva', '1.2.3'
+  s.dependency 'Minerva', '1.2.4'
   s.dependency 'Codextended'
   s.dependency 'CryptoSwift', '~> 1.3.2'
 
