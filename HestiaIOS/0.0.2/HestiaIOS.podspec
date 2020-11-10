@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
     s.source_files = 'HestiaIOS.framework/Headers/*.{h, m, swift}'
   
     # dependency
-    s.dependency 'Janus', '~> 0.3.26'
+    s.dependency 'Janus'
     s.dependency 'Hestia'
   
   end
