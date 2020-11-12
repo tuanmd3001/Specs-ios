@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 	s.homepage               = 'https://github.com/teko-vn/Specs-ios.git'
 	s.license                = { :type => 'MIT', :file => 'LICENSE' }
 
-	s.source                 = { :https => 'https://github.com/teko-vn/Specs-ios/releases/download/TripiCommon-v0.0.2/TripiCommon.framework.zip' }
+	s.source                 = { :http => 'https://github.com/teko-vn/Specs-ios/releases/download/TripiCommon-v0.0.2/TripiCommon.framework.zip' }
 	s.vendored_frameworks    = 'TripiCommon.framework'
 	s.public_header_files    = 'TripiCommon.framework/Headers/*.h'
 	s.source_files           = 'TripiCommon.framework/Headers/*.{h,m,swift}'
