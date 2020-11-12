@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 	s.dependency 'JVFloatLabeledTextField'
 	s.dependency 'MarqueeLabel', '3.2.0'
 
-	s.dependency 'TripiCommon', '0.0.1'
+	s.dependency 'TripiCommon', '0.0.2'
 	s.dependency 'CallAppSDK', '0.0.1'
 
 end
