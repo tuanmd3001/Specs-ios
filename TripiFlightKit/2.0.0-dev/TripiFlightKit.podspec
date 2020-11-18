@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 	s.dependency 'SwiftyBeaver'
 	s.dependency 'Cosmos'
 	s.dependency 'SVProgressHUD'
-	s.dependency 'IQKeyboardManagerSwift', '~> 6.5.0'
+	s.dependency 'IQKeyboardManagerSwift', '6.5.0'
 	s.dependency 'UPCarouselFlowLayout'
 	s.dependency 'Toast-Swift'
 	s.dependency 'SDWebImage'
