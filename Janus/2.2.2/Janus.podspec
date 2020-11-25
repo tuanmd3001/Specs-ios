@@ -45,6 +45,6 @@ Pod::Spec.new do |s|
     s.dependency 'FacebookShare', '~> 0.9.0'
     s.dependency 'GoogleSignIn', '~> 5.0.2'
     s.dependency 'SwiftyJSON', '~> 4.0'
-    s.dependency 'TerraInstancesManager', '~> 1.0.11'
+    s.dependency 'TerraInstancesManager', '~> 1.0.12'
 
   end
