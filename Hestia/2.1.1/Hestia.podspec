@@ -41,6 +41,11 @@ Pod::Spec.new do |s|
   
     s.public_header_files = 'Hestia.framework/Headers/*.h'
     s.source_files = 'Hestia.framework/Headers/*.{h, m, swift}'
+
+    s.pod_target_xcconfig = {
+      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+    }
+    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
     # dependency
     s.dependency 'TekCoreService', '~> 1.2.2'
