@@ -43,6 +43,11 @@ Pod::Spec.new do |s|
     s.public_header_files = 'HestiaIOS.framework/Headers/*.h'
     s.source_files = 'HestiaIOS.framework/Headers/*.{h, m, swift}'
   
+    s.pod_target_xcconfig = {
+      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+    }
+    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  
     # dependency
     s.dependency 'Janus', '~> 2.3.1'
     s.dependency 'Hestia', '~> 2.1.1'
