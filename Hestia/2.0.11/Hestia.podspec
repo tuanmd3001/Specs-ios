@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
   
     # dependency
     # s.dependency 'TekCoreNetwork', '0.3.1'
-    s.dependency 'TekCoreService', '~> 1.2.3'
+    s.dependency 'TekCoreService', '~> 1.2.2'
     s.dependency 'Kingfisher'
   
   end
