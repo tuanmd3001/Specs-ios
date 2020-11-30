@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
     # s.frameworks = 'UIKit', 'MapKit'
     # s.dependency 'AFNetworking', '~> 2.3'
   
-    s.vendored_frameworks = 'TripiFlightConnector.framework'
+    s.ios.vendored_frameworks = '**/TripiFlightConnector.framework'
   
     # s.public_header_files = 'TripiFlightConnector.framework/Headers/*.h'
     # s.source_files = 'TripiFlightConnector.framework/**/*.{h, m, swift}'
@@ -48,7 +48,7 @@ Pod::Spec.new do |s|
     # s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
     # dependency
-    s.dependency 'TripiFlightKit', '2.0.0-dev'
-    s.dependency 'HestiaIOS', '~> 2.1.5'
+    s.dependency 'TripiFlightKit', '~> 2.0.0-dev'
+    s.dependency 'HestiaIOS'
   
   end
