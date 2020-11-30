@@ -39,8 +39,8 @@ Pod::Spec.new do |s|
   
     s.vendored_frameworks = 'TripiFlightConnector.framework'
   
-    s.public_header_files = 'TripiFlightConnector.framework/Headers/*.h'
-    s.source_files = 'TripiFlightConnector.framework/**/*.{h, m, swift}'
+    # s.public_header_files = 'TripiFlightConnector.framework/Headers/*.h'
+    # s.source_files = 'TripiFlightConnector.framework/**/*.{h, m, swift}'
 
     # s.pod_target_xcconfig = {
     #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
