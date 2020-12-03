@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'Footprint'
-    s.version          = '0.0.3'
+    s.version          = ENV['VERSION']
     s.summary          = 'Footprint models'
   
   # This description is used to generate tags and improve search results.
@@ -20,10 +20,10 @@ Pod::Spec.new do |s|
     s.description      = <<-DESC
   TODO: Add long description of the pod here.
                          DESC
-    s.homepage         = 'https://github.com/teko-vn/Specs-ios.git'
+    s.homepage         = 'https://huylv-teko:29b7084d0ccbf3665332e93bda6edf772fc9d5ec@github.com/teko-vn/Specs-ios.git'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
-    s.source           = { :git => 'https://git.teko.vn/data/footprint/footprint-dto.git' }
+    s.source           = { :git => 'https://gitlab-ci-token:xvRZVdtxj4EHK-WGawzo@git.teko.vn/data/footprint/footprint-dto.git' }
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
     s.ios.deployment_target = '10.0'
@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
     s.source_files = 'swift/**/*.swift'
   
     # dependency
-    s.dependency 'gRPC-Swift', '~> 1.0.0-alpha.20'
+#     s.dependency 'gRPC-Swift', '~> 1.0.0-alpha.20'
     # s.dependency 'TekCoreService', '0.3.24'
     # s.dependency 'Kingfisher'
   
