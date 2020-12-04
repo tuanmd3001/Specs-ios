@@ -44,8 +44,8 @@ Pod::Spec.new do |s|
     s.source_files = 'swift/**/*.swift'
 
     # dependency
-#     s.dependency 'gRPC-Swift', '~> 1.0.0-alpha.20'
-    s.dependency 'SwiftProtobuf', '1.14.0'
+    s.dependency 'gRPC-Swift', '~> 1.0.0-alpha.20'
+#     s.dependency 'SwiftProtobuf', '1.14.0'
     # s.dependency 'TekCoreService', '0.3.24'
     # s.dependency 'Kingfisher'
 
