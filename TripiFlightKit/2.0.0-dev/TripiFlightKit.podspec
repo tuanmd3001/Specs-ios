@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 	s.dependency 'Toast-Swift'
 	s.dependency 'SDWebImage'
 	s.dependency 'JVFloatLabeledTextField'
-	s.dependency 'MarqueeLabel'
+	s.dependency 'MarqueeLabel', '~> 3.2.0'
 
 	s.dependency 'TripiCommon', '2.0.0'
 	s.dependency 'CallAppSDK', '0.0.1'
