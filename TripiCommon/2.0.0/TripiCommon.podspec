@@ -14,11 +14,12 @@ Pod::Spec.new do |s|
 
 	s.ios.deployment_target  = '10.0'
 
-	s.dependency 'Alamofire', '~> 5.3'
+	s.dependency 'Alamofire', '~> 5.3.0'
 	s.dependency 'Moya'
 	s.dependency 'RxCocoa'
 	s.dependency 'RxSwift'
 	s.dependency 'SwiftyBeaver'
 	s.dependency 'RxMoya'
 	s.dependency 'RxBlocking'
+	s.dependency 'Result'
 end
