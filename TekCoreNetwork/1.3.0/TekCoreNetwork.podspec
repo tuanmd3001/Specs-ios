@@ -18,27 +18,30 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   
     s.description      = <<-DESC
-  TODO: Add long description of the pod here.
+  TekCoreNetwork framework static alamofire
                          DESC
   
     s.homepage         = 'https://github.com/teko-vn/Specs-ios.git'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
-    s.source           = { :http => 'http://github.com/teko-vn/Specs-ios/releases/download/' + s.name.to_s + '-v' + s.version.to_s + '/' + s.name.to_s + '.xcframework.zip' }
+    s.source           = { :http => 'http://github.com/teko-vn/Specs-ios/releases/download/' + s.name.to_s + '-v' + s.version.to_s + '/' + s.name.to_s + '.zip' }
   
     s.ios.deployment_target = '10.0'
 
-    # s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-    # s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    
+    s.user_target_xcconfig = { 
+      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64', 
+      'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' 
+    }
 
-
-    s.vendored_frameworks = 'TekCoreNetwork.xcframework'
+    s.vendored_frameworks = 'TekCoreNetwork.framework'
       
-    # s.public_header_files = 'TekCoreNetwork.framework/Headers/*.h'
-    # s.source_files = 'TekCoreNetwork.framework/Headers/*.{h, m, swift}'
+    s.public_header_files = 'TekCoreNetwork.framework/Headers/*.h'
+    s.source_files = 'TekCoreNetwork.framework/Headers/*.{h, m, swift}'
   
     # dependency
-    s.dependency 'Alamofire', '5.3.0'
+    s.dependency 'Alamofire', '~> 5.3.0'
   
   
   end
