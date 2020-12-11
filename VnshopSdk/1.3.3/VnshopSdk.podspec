@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.dependency 'FirebasePlugin', '~> 0.1.2'
   
 	s.dependency 'Terra', '~> 2.3.0'
-	s.dependency 'Minerva'
+	s.dependency 'Minerva', '~> 2.4.1'
 	s.dependency 'Janus', '~> 2.3.4'
 
 	s.dependency 'TekUserService', '~> 2.2.0'
