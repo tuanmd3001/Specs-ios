@@ -56,7 +56,7 @@ Pod::Spec.new do |s|
 	s.dependency 'BSImagePicker', '~> 3.3.1'
 
 #realm
-	s.dependency 'RealmSwift'
+	s.dependency 'RealmSwift', '~> 3.18.0'
 
 #rx
 	s.dependency 'RxCocoa', '~> 5.1.0'
