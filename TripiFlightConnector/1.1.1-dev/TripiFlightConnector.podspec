@@ -49,7 +49,22 @@ Pod::Spec.new do |s|
     # s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
     # dependency
-    s.dependency 'TripiFlightKit', '~> 2.0.1-dev'
     s.dependency 'HestiaIOS'
+    s.dependency 'Alamofire', '~> 5.3.0'
+    s.dependency 'Moya'
+    s.dependency 'RxCocoa'
+    s.dependency 'RxSwift'
+    s.dependency 'SwiftyBeaver'
+    s.dependency 'Result'
+    s.dependency 'Moya/RxSwift'
+    s.dependency 'Cosmos'
+    s.dependency 'SVProgressHUD'
+    s.dependency 'IQKeyboardManagerSwift', '6.5.0'
+    s.dependency 'UPCarouselFlowLayout'
+    s.dependency 'Toast-Swift'
+    s.dependency 'SDWebImage'
+    s.dependency 'JVFloatLabeledTextField'
+    s.dependency 'MarqueeLabel', '~> 3.2.0'
+    s.dependency 'SkeletonView'
   
   end
