@@ -14,12 +14,16 @@ Pod::Spec.new do |s|
 
 	s.ios.deployment_target  = '10.0'
 
+	s.pod_target_xcconfig = {
+      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+    }
+    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+
 	s.dependency 'Alamofire', '~> 5.3.0'
 	s.dependency 'Moya'
 	s.dependency 'RxCocoa'
 	s.dependency 'RxSwift'
 	s.dependency 'SwiftyBeaver'
-	s.dependency 'RxMoya'
-	s.dependency 'RxBlocking'
 	s.dependency 'Result'
+	s.dependency 'Moya/RxSwift'
 end
