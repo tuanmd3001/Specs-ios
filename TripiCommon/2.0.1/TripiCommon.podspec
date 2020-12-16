@@ -24,6 +24,7 @@ Pod::Spec.new do |s|
 	s.dependency 'RxCocoa'
 	s.dependency 'RxSwift'
 	s.dependency 'SwiftyBeaver'
+	s.dependency 'RxMoya'
+	s.dependency 'RxBlocking'
 	s.dependency 'Result'
-	s.dependency 'Moya/RxSwift'
 end
