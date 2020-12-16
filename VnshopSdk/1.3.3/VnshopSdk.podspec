@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
 	s.dependency 'TekLocationService', '~> 2.2.0'
 	s.dependency 'TekIdentityService', '~> 2.2.0'
 	s.dependency 'TekListingService', '~> 2.2.0'
-	s.dependency 'TekDiscoveryService', '~> 2.2.0'
+	s.dependency 'TekDiscoveryService', '2.2.0'
 	s.dependency 'TekCrmService', '~> 2.2.0'
  	s.dependency 'TekCoreUploader', '~> 1.0.1'
 	s.dependency 'TekoMediaPreview'
