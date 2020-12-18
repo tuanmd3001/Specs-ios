@@ -56,12 +56,12 @@ TODO: Add long description of the pod here.
 
   # s.static_framework = true
 
-  s.dependency 'Firebase/Auth'
-  s.dependency 'Firebase/Crashlytics'
-  s.dependency 'Firebase/Database'
-  s.dependency 'Firebase/Messaging'
-  s.dependency 'Firebase/Analytics'
-  s.dependency 'Firebase/RemoteConfig'
-  s.dependency 'Firebase/DynamicLinks'
+  s.dependency 'Firebase/Auth', '~> 6.24'
+  s.dependency 'Firebase/Crashlytics', '~> 6.24'
+  s.dependency 'Firebase/Database', '~> 6.24'
+  s.dependency 'Firebase/Messaging', '~> 6.24'
+  s.dependency 'Firebase/Analytics', '~> 6.24'
+  s.dependency 'Firebase/RemoteConfig', '~> 6.24'
+  s.dependency 'Firebase/DynamicLinks', '~> 6.24'
 
 end
