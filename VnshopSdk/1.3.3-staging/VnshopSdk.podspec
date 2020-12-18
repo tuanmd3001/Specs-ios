@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   }
 
 	s.dependency 'Firebase/Performance'
-  	s.dependency 'FirebasePlugin', '~> 0.1.2'
+  	s.dependency 'FirebasePlugin', '~> 0.1.3'
   
 	s.dependency 'Terra', '~> 2.3.0'
 	s.dependency 'Minerva', '~> 2.4.1'
