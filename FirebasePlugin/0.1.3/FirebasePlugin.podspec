@@ -56,7 +56,7 @@ TODO: Add long description of the pod here.
 
   s.static_framework = true
 
-  s.dependency 'Firebase/Auth'
+  s.dependency 'Firebase/Auth', '~> 6'
   s.dependency 'Firebase/Crashlytics'
   s.dependency 'Firebase/Database'
   s.dependency 'Firebase/Messaging'
