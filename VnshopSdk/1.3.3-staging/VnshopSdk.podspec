@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   }
 
 	s.dependency 'Firebase/Performance'
-  	s.dependency 'FirebasePlugin', '~> 0.1.4'
+  	s.dependency 'FirebasePlugin', '~> 0.2.0'
   
 	s.dependency 'Terra', '~> 2.3.0'
 	s.dependency 'Minerva', '~> 2.4.1'
@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
 	s.dependency 'TekDiscoveryService', '2.2.0'
 	s.dependency 'TekCrmService', '~> 2.2.0'
  	s.dependency 'TekCoreUploader', '~> 1.0.1'
-	s.dependency 'TekoMediaPreview'
+	s.dependency 'TekoMediaPreview', '~> 0.0.2'
 
 #ui
 	s.dependency 'UIColor_Hex_Swift', '~> 4.0.2'
@@ -72,7 +72,6 @@ Pod::Spec.new do |s|
 	s.dependency 'JWTDecode', '~> 2.4'
 
 # tracker
-	s.dependency 'TekoTracker'
-	s.dependency 'TekoTracker/Ecommerce'
+	s.dependency 'TekoTracker', '~> 0.4.1'
 
 end
