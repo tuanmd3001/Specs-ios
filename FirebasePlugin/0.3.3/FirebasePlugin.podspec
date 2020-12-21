@@ -41,7 +41,8 @@ TODO: Add long description of the pod here.
     }
   s.user_target_xcconfig = { 
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64', 
-    'ONLY_ACTIVE_ARCH' => 'YES' 
+    'ONLY_ACTIVE_ARCH' => 'YES',
+    'SWIFT_INCLUDE_PATHS' => '"\$(PODS_ROOT)/FirebasePlugin/FirebasePlugin.framework"'
   }
 
   # s.resources = "FirebasePlugin/Module/**/*.{xcassets,json,storyboard,xib,xcdatamodeld}"
