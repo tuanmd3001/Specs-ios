@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
     s.public_header_files = 'Minerva.framework/Headers/*.h'
     s.source_files = 'Minerva.framework/Headers/*.{h, m, swift}'
   
-    s.static_framework = true
+    # s.static_framework = true
 
     # dependency
     s.dependency 'TekCoreService', '~> 1.2.2'
