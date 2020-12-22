@@ -43,7 +43,6 @@ Pod::Spec.new do |s|
 
     s.dependency 'SVProgressHUD'
     s.dependency 'SnapKit'
-    s.dependency 'FirebaseCore', '~> 6.7.0'
     s.dependency 'FirebaseFirestore'
     s.dependency 'TerraInstancesManager', '~> 1.1.0'
 
