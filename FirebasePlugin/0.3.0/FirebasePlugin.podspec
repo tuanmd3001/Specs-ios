@@ -54,7 +54,7 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 
-  # s.static_framework = true
+  s.static_framework = true
 
   s.dependency 'Firebase/Auth', '~> 6.24'
   s.dependency 'Firebase/Crashlytics', '~> 6.24'
