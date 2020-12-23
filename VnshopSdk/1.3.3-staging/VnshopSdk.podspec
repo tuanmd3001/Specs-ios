@@ -25,9 +25,9 @@ Pod::Spec.new do |s|
 
   	s.static_framework = true
 
-  	s.dependency 'TekServiceInterfaces', '0.2.45'
   	s.dependency 'FirebasePlugin', '~> 0.3.1'
-  
+	  
+	s.dependency 'HestiaIOS'
 	s.dependency 'Terra', '~> 2.3.0'
 	s.dependency 'Minerva', '~> 2.5.0'
 	s.dependency 'Janus', '~> 2.3.4'
