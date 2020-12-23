@@ -35,14 +35,14 @@ TODO: Add long description of the pod here.
   s.public_header_files = 'TekoTracker.framework/Headers/*.h'
   s.source_files = 'TekoTracker.framework/Headers/*.{h, m, swift}'
 
-  s.pod_target_xcconfig = {
-      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
-      'ONLY_ACTIVE_ARCH' => 'YES'
-    }
-  s.user_target_xcconfig = { 
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64', 
-    'ONLY_ACTIVE_ARCH' => 'YES' 
-  }
+  # s.pod_target_xcconfig = {
+  #     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+  #     'ONLY_ACTIVE_ARCH' => 'YES'
+  #   }
+  # s.user_target_xcconfig = { 
+  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64', 
+  #   'ONLY_ACTIVE_ARCH' => 'YES' 
+  # }
 
   # s.resources = "FirebasePlugin/Module/**/*.{xcassets,json,storyboard,xib,xcdatamodeld}"
 
