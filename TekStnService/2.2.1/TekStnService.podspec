@@ -52,7 +52,7 @@ Pod::Spec.new do |s|
   
     # dependency
     s.dependency 'TekCoreService', '~> 1.2.2'
-    s.dependency 'TekServiceInterfaces', '~> 0.2.38'
+    s.dependency 'TekServiceInterfaces', '~> 0.2.47'
     s.dependency 'TerraInstancesManager', '~> 1.1.0'
 
   end
