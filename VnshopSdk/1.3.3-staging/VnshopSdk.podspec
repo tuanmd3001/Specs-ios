@@ -22,12 +22,11 @@ Pod::Spec.new do |s|
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64', 
     'ONLY_ACTIVE_ARCH' => 'YES' 
   }
-
-	s.dependency 'Firebase/Performance'
-  	s.dependency 'FirebasePlugin', '~> 0.2.0'
+  	s.dependency 'TekServiceInterfaces', '0.2.45'
+  	s.dependency 'FirebasePlugin', '~> 0.3.1'
   
 	s.dependency 'Terra', '~> 2.3.0'
-	s.dependency 'Minerva', '~> 2.4.1'
+	s.dependency 'Minerva', '~> 2.5.0'
 	s.dependency 'Janus', '~> 2.3.4'
 
 	s.dependency 'TekUserService', '~> 2.2.0'
