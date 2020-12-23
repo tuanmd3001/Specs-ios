@@ -63,5 +63,6 @@ TODO: Add long description of the pod here.
   s.dependency 'Firebase/Analytics'
   s.dependency 'Firebase/RemoteConfig'
   s.dependency 'Firebase/DynamicLinks'
+  s.dependency 'Firebase/Performance'
 
 end
