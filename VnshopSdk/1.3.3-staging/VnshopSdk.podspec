@@ -22,6 +22,9 @@ Pod::Spec.new do |s|
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64', 
     'ONLY_ACTIVE_ARCH' => 'YES' 
   }
+
+  	s.static_framework = true
+
   	s.dependency 'TekServiceInterfaces', '0.2.45'
   	s.dependency 'FirebasePlugin', '~> 0.3.1'
   
