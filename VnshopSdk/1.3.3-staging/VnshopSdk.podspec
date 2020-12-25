@@ -58,13 +58,13 @@ Pod::Spec.new do |s|
 	s.dependency 'BSImagePicker', '~> 3.3.1'
 
 #realm
-	s.dependency 'RealmSwift', '~> 3.18.0'
+	s.dependency 'RealmSwift', '~> 10.5.0'
 
 #rx
 	s.dependency 'RxCocoa', '~> 5.1.0'
 	s.dependency 'RxSwift', '~> 5.1.0'
 	s.dependency 'RxRelay', '~> 5.1.0'
-	s.dependency 'RxRealm', '~> 1.0.0'
+	s.dependency 'RxRealm'
 
 #google
 	s.dependency 'GooglePlaces', '~> 3.4.0'
