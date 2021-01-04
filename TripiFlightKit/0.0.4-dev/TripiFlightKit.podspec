@@ -9,8 +9,8 @@ Pod::Spec.new do |s|
 	                       :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/28126061',
 	                       :type => 'zip',
 	                       :headers => [
-	                         'Authorization => token ' + ENV['GITHUB_USER_TOKEN'],
-	                         'Accept => application/octet-stream'
+	                         'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
+	                         'Accept: application/octet-stream'
 	                       ]
 	                     }
 	s.vendored_frameworks    = 'TripiFlightKit.framework'

@@ -28,8 +28,8 @@ Pod::Spec.new do |s|
                            :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/28446551',
                            :type => 'zip',
                            :headers => [
-                             'Authorization => token ' + ENV['GITHUB_USER_TOKEN'],
-                             'Accept => application/octet-stream'
+                             'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
+                             'Accept: application/octet-stream'
                            ]
                          }
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'

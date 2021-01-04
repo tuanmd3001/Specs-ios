@@ -27,8 +27,8 @@ Pod::Spec.new do |s|
                            :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/29335084',
                            :type => 'zip',
                            :headers => [
-                             'Authorization => token ' + ENV['GITHUB_USER_TOKEN'],
-                             'Accept => application/octet-stream'
+                             'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
+                             'Accept: application/octet-stream'
                            ]
                          }
 
