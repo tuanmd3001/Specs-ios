@@ -25,7 +25,14 @@ Pod::Spec.new do |s|
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
-    s.source           = { :http => 'http://github.com/teko-vn/Specs-ios/releases/download/' + s.name.to_s + '-v' + s.version.to_s + '/' + s.name.to_s + '.zip' }
+    s.source           = {
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/28069381',
+                           :type => 'zip',
+                           :headers => [
+                             'Authorization => token ' + ENV['GITHUB_USER_TOKEN'],
+                             'Accept => application/octet-stream'
+                           ]
+                         }
      # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   
     s.ios.deployment_target = '10.0'
