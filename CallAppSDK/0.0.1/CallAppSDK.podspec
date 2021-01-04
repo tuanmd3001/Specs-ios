@@ -5,7 +5,14 @@ Pod::Spec.new do |s|
 	s.homepage               = 'https://github.com/teko-vn/Specs-ios.git'
 	s.license                = { :type => 'MIT', :file => 'LICENSE' }
 
-	s.source                 = { :http => 'https://github.com/teko-vn/Specs-ios/releases/download/CallAppSDK-v0.0.1/CallAppSDK.framework.zip' }
+	s.source                 = {
+	                             :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/27632487',
+	                             :type => 'zip',
+	                             :headers => [
+	                               'Authorization => token ' + ENV['GITHUB_USER_TOKEN'],
+	                               'Accept => application/octet-stream'
+	                             ]
+	                           }
 	s.vendored_frameworks    = 'CallAppSDK.framework'
 	s.public_header_files    = 'CallAppSDK.framework/Headers/*.h'
 	s.source_files           = 'CallAppSDK.framework/Headers/*.{h,m,swift}'

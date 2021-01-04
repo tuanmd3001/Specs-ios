@@ -5,7 +5,14 @@ Pod::Spec.new do |s|
 	s.homepage               = 'https://github.com/teko-vn/Specs-ios.git'
 	s.license                = { :type => 'MIT', :file => 'LICENSE' }
 
-	s.source                 = { :http => 'https://github.com/teko-vn/Specs-ios/releases/download/' + s.name.to_s + '-v' + s.version.to_s + '/VnshopSdk.framework.zip' }
+	s.source                 = {
+	                             :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/29964315',
+	                             :type => 'zip',
+	                             :headers => [
+	                               'Authorization => token ' + ENV['GITHUB_USER_TOKEN'],
+	                               'Accept => application/octet-stream'
+	                             ]
+	                           }
 	s.vendored_frameworks    = 'VnshopSdk.framework'
 	s.public_header_files    = 'VnshopSdk.framework/Headers/*.h'
 	s.source_files           = 'VnshopSdk.framework/Headers/*.{h,m,swift}'
