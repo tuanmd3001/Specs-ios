@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "Hoàng Hải" => "hai.hm@teko.vn" }
 
   spec.source           = {
-    :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/30289527',
+    :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/30336433',
     :type => 'zip',
     :headers => [
       'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
