@@ -34,6 +34,5 @@ Pod::Spec.new do |s|
     s.dependency 'Janus'
     s.dependency 'JanusFacebook'
     s.dependency 'JanusGoogle'
-    s.dependency 'JanusApple'
     
   end
