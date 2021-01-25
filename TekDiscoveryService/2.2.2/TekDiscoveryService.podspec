@@ -58,7 +58,7 @@ Pod::Spec.new do |s|
     s.source_files = 'TekDiscoveryService.framework/Headers/*.{h, m, swift}'
   
     s.dependency 'TekCoreService', '~> 1.2.2'
-    s.dependency 'TekServiceInterfaces', '~> 0.2.44'
+    s.dependency 'TekServiceInterfaces', '~> 0.2.50'
     s.dependency 'TerraInstancesManager', '~> 1.1.0'
 
   end
