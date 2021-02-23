@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 	}
 
   	# s.static_framework = true
-
+	# Firebase
   	s.dependency 'FirebasePlugin', '~> 0.3.7'
   	s.dependency 'Firebase/Performance'
   	s.dependency 'Firebase/Crashlytics'
@@ -39,10 +39,14 @@ Pod::Spec.new do |s|
   	s.dependency 'Firebase/Analytics'
   	s.dependency 'Firebase/DynamicLinks'
 	  
+	# Terra
 	s.dependency 'HestiaIOS'
+	s.dependency 'Hestia'
 	s.dependency 'Terra', '~> 2.3.8'
 	s.dependency 'Minerva', '~> 3.4.0'
-	s.dependency 'Janus', '~> 2.3.5'
+	s.dependency 'Janus', '~> 3.0.2'
+	s.dependency 'JanusUI'
+
 	s.dependency 'Kingfisher', '~> 5.14'
 
 	s.dependency 'TekUserService', '~> 2.2.0'
