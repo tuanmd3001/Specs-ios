@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 		'ONLY_ACTIVE_ARCH' => 'YES' 
 	}
 
-  	# s.static_framework = true
+  	s.static_framework = true
 	# Firebase
   	s.dependency 'FirebasePlugin', '~> 0.3.7'
   	s.dependency 'Firebase/Performance'
