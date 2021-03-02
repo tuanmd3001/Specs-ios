@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
 	s.license                = { :type => 'MIT', :file => 'LICENSE' }
 
 	s.source                 = { 
-                                 :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/32819581',
+                                 :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/32837671',
                                  :type => 'zip',
                                  :headers => [
                                                  'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
 	s.dependency 'SDWebImage', '~> 5.1.1'
 	s.dependency 'JVFloatLabeledTextField', '~> 1.1.1'
 	s.dependency 'MarqueeLabel', '~> 3.2.0'
-	s.dependency 'SwiftyBeaver', '~> 1.7'
+	s.dependency 'SwiftyBeaver'
 	s.dependency 'Moya/RxSwift', '~> 14.0'
 	s.dependency 'RxCocoa', '~> 5'
 	s.dependency 'Alamofire', '~> 5.3.0'
