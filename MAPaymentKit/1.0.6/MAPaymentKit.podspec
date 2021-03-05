@@ -45,6 +45,6 @@ Pod::Spec.new do |s|
     s.source_files = 'MAPaymentKit.framework/Headers/*.{h, m, swift}'
   
     # dependency
-    s.dependency 'TerraInstancesManager', '~> 1.2.9'
+    s.dependency 'TerraInstancesManager', '~> 1.2.12'
 
   end

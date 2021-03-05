@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
   
     # dependency
     s.dependency 'TekCoreService', '~> 1.2.10'
-    s.dependency 'TerraInstancesManager', '~> 1.2.10'
+    s.dependency 'TerraInstancesManager', '~> 1.2.12'
 
     s.dependency 'SVProgressHUD'
     s.dependency 'SnapKit'
