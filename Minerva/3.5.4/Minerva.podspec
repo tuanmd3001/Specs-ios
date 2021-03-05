@@ -55,7 +55,7 @@ Pod::Spec.new do |s|
     s.dependency 'BerTlv'
     s.dependency 'Toast-Swift', '~> 5.0.0'
     s.dependency 'SwiftyJSON', '~> 4.0'
-    s.dependency 'Kingfisher', '~> 6.0'
+    s.dependency 'Kingfisher'
 
 
   end
