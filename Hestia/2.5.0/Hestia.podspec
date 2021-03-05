@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/32812659',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/32995750',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -57,7 +57,7 @@ Pod::Spec.new do |s|
     # dependency
     s.dependency 'TekCoreService', '~> 1.2.2'
     s.dependency 'Kingfisher'
-    s.dependency 'TerraInstancesManager', '~> 1.2.10'
+    s.dependency 'TerraInstancesManager', '~> 1.2.12'
     s.dependency 'CryptoSwift', '~> 1.3.8'
     s.dependency 'SwiftyJSON', '~> 4.0'
   
