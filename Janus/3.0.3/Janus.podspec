@@ -33,6 +33,6 @@ Pod::Spec.new do |s|
   
     s.dependency 'TekCoreService', '~> 1.2.9'
     s.dependency 'SwiftyJSON', '~> 4.0'
-    s.dependency 'TerraInstancesManager', '~> 1.1.0'
+    s.dependency 'TerraInstancesManager'
     
   end
