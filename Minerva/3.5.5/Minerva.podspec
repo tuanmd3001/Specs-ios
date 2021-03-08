@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
     s.dependency 'SVProgressHUD'
     s.dependency 'SnapKit'
     s.dependency 'FirebaseFirestore'
-    s.dependency 'FirebaseCore', '~> 7.3.0'
+    s.dependency 'FirebaseCore'
     s.dependency 'BerTlv'
     s.dependency 'Toast-Swift', '~> 5.0.0'
     s.dependency 'SwiftyJSON', '~> 4.0'
