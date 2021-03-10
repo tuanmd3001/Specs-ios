@@ -34,4 +34,5 @@ Pod::Spec.new do |s|
 	s.dependency 'SkeletonView'
 	s.dependency 'UPCarouselFlowLayout'
 	s.dependency 'RealmSwift'
+	s.dependency 'MAPaymentKit'
 end
