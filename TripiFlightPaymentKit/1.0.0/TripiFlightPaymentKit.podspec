@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
 
 	s.author                 = {'Mobile Lab' => 'mobile.lab@teko.vn'}
 
-	s.dependency 'TripiFlightKit', '1.0.0'
+	s.dependency 'TripiFlightKit'
 	s.dependency 'TripiCommon', '1.0.0'
 end
