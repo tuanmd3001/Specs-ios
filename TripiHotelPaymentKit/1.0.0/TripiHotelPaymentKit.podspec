@@ -20,6 +20,5 @@ Pod::Spec.new do |s|
 
 	s.author                 = {'Mobile Lab' => 'mobile.lab@teko.vn'}
 
-	s.dependency 'TripiHotelKit'
 	s.dependency 'TripiCommon', '1.0.0'
 end
