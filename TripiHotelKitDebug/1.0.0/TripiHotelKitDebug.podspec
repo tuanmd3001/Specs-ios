@@ -34,5 +34,6 @@ Pod::Spec.new do |s|
 	s.dependency 'SkeletonView'
 	s.dependency 'UPCarouselFlowLayout'
 	s.dependency 'RealmSwift'
+	s.dependency 'GoogleMaps'
 	s.dependency 'MAPaymentKit', '~> 1.0.8'
 end
