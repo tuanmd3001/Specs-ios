@@ -24,4 +24,5 @@ Pod::Spec.new do |s|
 	s.dependency 'RxCocoa', '~> 5.1.0'
 	s.dependency 'RxSwift', '~> 5.1.1'
 	s.dependency 'Alamofire', '~> 5.3.0'
+	s.dependency 'CallAppSDK'
 end
