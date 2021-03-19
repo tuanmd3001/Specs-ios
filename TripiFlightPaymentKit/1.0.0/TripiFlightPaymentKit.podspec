@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
 	s.license                = { :type => 'MIT', :file => 'LICENSE' }
 
 	s.source                 = { 
-                                 :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/33655439',
+                                 :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/33576148',
                                  :type => 'zip',
                                  :headers => [
                                                  'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
 
 	s.author                 = {'Mobile Lab' => 'mobile.lab@teko.vn'}
 
-	s.dependency 'TripiFlightKit'
+	# s.dependency 'TripiFlightKit'
 	s.dependency 'TripiCommon', '1.0.0'
 end
