@@ -58,7 +58,7 @@ TODO: Add long description of the pod here.
   # dependency
   s.dependency 'TekCoreService', '~> 1.2.2'
   # s.dependency 'TekServiceInterfaces', '~> 0.2.45'
-  s.dependency 'TerraInstancesManager', '~> 1.2.3'
+  s.dependency 'TerraInstancesManager', '~> 3.0.0'
   s.dependency 'Codextended'
   s.dependency 'CryptoSwift', '~> 1.3.2'
 
