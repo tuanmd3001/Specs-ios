@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
 	s.license                = { :type => 'MIT', :file => 'LICENSE' }
 
 	s.source                 = { 
-                                 :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/33955251',
+                                 :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/34011793',
                                  :type => 'zip',
                                  :headers => [
                                                  'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
