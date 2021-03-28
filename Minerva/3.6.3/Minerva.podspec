@@ -57,6 +57,5 @@ Pod::Spec.new do |s|
     s.dependency 'SwiftyJSON', '~> 4.0'
     s.dependency 'Kingfisher', '~> 6.0'
     s.dependency 'TekBankingService'
-    s.dependency 'VnpayWalletSDK'
 
   end
