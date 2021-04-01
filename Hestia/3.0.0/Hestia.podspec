@@ -57,7 +57,7 @@ Pod::Spec.new do |s|
     # dependency
     s.dependency 'TekCoreService', '~> 1.2.2'
     s.dependency 'Kingfisher'
-    s.dependency 'TerraInstancesManager', '~> 1.1.0'
+    s.dependency 'TerraInstancesManager', '~> 3.0.1'
     s.dependency 'CryptoSwift', '~> 1.3.8'
     s.dependency 'SwiftyJSON', '~> 4.0'
   
