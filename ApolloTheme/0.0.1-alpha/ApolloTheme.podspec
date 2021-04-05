@@ -42,8 +42,8 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = 'ApolloTheme.framework'
   
     # dependency
-    pod 'Logging'
-    pod 'TerraInstancesManager', '~> 1.2.16'
-    pod 'TekCoreService'
+    s.dependency 'Logging'
+    s.dependency 'TerraInstancesManager', '~> 1.2.16'
+    s.dependency 'TekCoreService'
 
   end
