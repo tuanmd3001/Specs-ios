@@ -32,8 +32,8 @@ Pod::Spec.new do |s|
     s.source_files = 'JanusFacebook.framework/Headers/*.{h, m, swift}'
   
     s.dependency 'SwiftyJSON', '~> 4.0'
-    s.dependency 'FacebookCore', '~> 0.9.0'
-    s.dependency 'FacebookLogin', '~> 0.9.0'
-    s.dependency 'FacebookShare', '~> 0.9.0'
+    s.dependency 'FacebookCore'
+    s.dependency 'FacebookLogin'
+    s.dependency 'FacebookShare'
     
   end
