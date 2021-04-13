@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
 	spec.ios.deployment_target = '10.0'
 
 	spec.source = {
-		:http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/34854592',
+		:http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/34907240',
 		:type => 'zip',
 		:headers => [
 			'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -28,6 +28,10 @@ Pod::Spec.new do |spec|
 	}
     
 	spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+
+	spec.subspec 'Model' do |model|
+		model.vendored_frameworks = 'LoyaltyModel.framework'
+	end
 
 	spec.subspec 'Core' do |core|
 		core.vendored_frameworks = 'LoyaltyCore.framework'
@@ -43,21 +47,16 @@ Pod::Spec.new do |spec|
 		ui.dependency 'LoyaltySDK/Core'
 	end
 
-	spec.subspec 'Component' do |ui|
-		ui.vendored_frameworks = 'LoyaltyComponent.framework'
+	spec.subspec 'Component' do |component|
+		component.vendored_frameworks = 'LoyaltyComponent.framework'
 
-		ui.dependency 'LoyaltySDK/Model'
-		ui.dependency 'IQKeyboardManagerSwift'
-		ui.dependency 'IQKeyboardManagerSwift'
-		ui.dependency 'Logging'
-		ui.dependency 'FittedSheets'
-		ui.dependency 'Kingfisher'
+		component.dependency 'LoyaltySDK/Model'
+		component.dependency 'IQKeyboardManagerSwift'
+		component.dependency 'Logging'
+		component.dependency 'FittedSheets'
+		component.dependency 'Kingfisher'
 	end
 
-	spec.subspec 'Model' do |ui|
-		ui.vendored_frameworks = 'LoyaltyModel.framework'
-	end
-
-	spec.default_subspecs = 'Core', 'UI', 'Component', 'Model'
+	spec.default_subspecs = 'Model', 'Core', 'UI', 'Component'
 
 end
