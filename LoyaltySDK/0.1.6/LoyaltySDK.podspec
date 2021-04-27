@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
 	spec.ios.deployment_target = '10.0'
 
 	spec.source = {
-		:http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/35901265',
+		:http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/35903183',
 		:type => 'zip',
 		:headers => [
 			'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
