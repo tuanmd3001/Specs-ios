@@ -45,5 +45,6 @@ Pod::Spec.new do |s|
     s.dependency 'Logging'
     s.dependency 'TerraInstancesManager', '~> 1.2.16'
     s.dependency 'TekCoreService'
+    s.dependency 'Apollo', '~> 0.4.8'
 
   end
