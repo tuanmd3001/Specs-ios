@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   
     s.dependency 'TerraInstancesManager'
     s.dependency 'LoyaltyCore', '~> 0.1.15'
-    s.dependency 'LoyaltyComponent', '~> 0.1.15'
-    s.dependency 'LoyaltyUI', '~> 0.1.15'
+    s.dependency 'LoyaltyComponent', '~> 0.1.17'
+    s.dependency 'LoyaltyUI', '~> 0.1.16'
     
   end
