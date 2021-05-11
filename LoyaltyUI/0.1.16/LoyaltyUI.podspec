@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
     s.dependency 'Logging'
     s.dependency 'IQKeyboardManagerSwift'
-    s.dependency 'FittedSheets'
+    s.dependency 'FittedSheets', '~> 1.4.6'
     s.dependency 'TerraInstancesManager'
     s.dependency 'Kingfisher'
     s.dependency 'ApolloTheme', '~> 0.0.1'

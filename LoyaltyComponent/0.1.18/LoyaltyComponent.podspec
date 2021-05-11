@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = 'LoyaltyComponent.framework'
   
     s.dependency 'TerraInstancesManager'
-    s.dependency 'FittedSheets'
+    s.dependency 'FittedSheets', '~> 1.4.6'
     s.dependency 'Kingfisher'
     s.dependency 'ApolloTheme', '~> 0.0.1'
     s.dependency 'Apollo'
