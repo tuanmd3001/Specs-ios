@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
     }
     s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
     
-    s.vendored_frameworks = 'LoyaltyConsumer.framework'
+    s.vendored_frameworks = 'LoyaltyConsumerUI.framework'
   
     s.dependency 'Apollo'
     s.dependency 'ApolloTheme'
