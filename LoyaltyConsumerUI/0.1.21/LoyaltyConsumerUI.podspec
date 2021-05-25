@@ -28,9 +28,13 @@ Pod::Spec.new do |s|
     
     s.vendored_frameworks = 'LoyaltyConsumerUI.framework'
   
+    s.dependency 'Apollo'
+    s.dependency 'ApolloTheme'
+    s.dependency 'FittedSheets'
+    s.dependency 'Kingfisher'
     s.dependency 'TerraInstancesManager'
-    s.dependency 'LoyaltyCore', '~> 0.1.15'
-    s.dependency 'LoyaltyComponent', '~> 0.1.17'
-    s.dependency 'LoyaltyUI', '~> 0.1.16'
+    s.dependency 'LoyaltyCore', '~> 0.1.20'
+    s.dependency 'LoyaltyComponent', '~> 0.1.20'
+    s.dependency 'LoyaltyConsumer', '~> 0.1.20'
     
   end
