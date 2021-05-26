@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'LoyaltyConsumerUI'
-    s.version          = '0.1.22'
+    s.version          = '0.1.23'
     s.summary          = 'LoyaltyConsumerUI'
   
     s.description      = <<-DESC
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/37550801',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/37559541',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
