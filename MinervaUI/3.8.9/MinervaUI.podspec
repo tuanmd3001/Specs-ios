@@ -47,8 +47,8 @@ Pod::Spec.new do |s|
     # dependency
     s.dependency 'Minerva', '~> 3.8.2'
     s.dependency 'Apollo', '~> 0.4.3'
-    s.dependency 'LoyaltyComponent', '~> 0.1.18'
-    s.dependency 'LoyaltyCore', '~> 0.1.16'
+    s.dependency 'LoyaltyComponent', '~> 0.1.23'
+    s.dependency 'LoyaltyCore', '~> 0.1.23'
 
     s.dependency 'VnpayWalletSDK', '~> 1.0.2'
     s.dependency 'Kingfisher', '~> 6.0'
