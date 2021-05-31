@@ -36,5 +36,6 @@ Pod::Spec.new do |s|
     s.dependency 'LoyaltyCore', '~> 0.1.25'
     s.dependency 'LoyaltyComponent', '~> 0.1.25'
     s.dependency 'LoyaltyConsumer', '~> 0.1.25'
+    s.dependency 'IQKeyboardManagerSwift'
     
   end
