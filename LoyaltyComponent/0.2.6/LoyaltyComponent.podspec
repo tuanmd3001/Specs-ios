@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/38050774',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/38066156',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -29,10 +29,10 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = 'LoyaltyComponent.framework'
   
     s.dependency 'TerraInstancesManager'
-    s.dependency 'FittedSheets', '~> 1.4.6'
+    s.dependency 'FittedSheets'
     s.dependency 'Kingfisher'
     s.dependency 'ApolloTheme', '~> 0.0.1'
     s.dependency 'Apollo'
-    s.dependency 'LoyaltyModel', '~> 0.1.23'
+    s.dependency 'LoyaltyModel', '~> 0.1.15'
     
   end
