@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '$(git config user.name)' => '$(git config user.email)' }
   s.source           = {
-                         :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/38190862',
+                         :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/38207079',
                          :type => 'zip',
                          :headers => [
                            'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -58,7 +58,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'TekOrderService.framework/Headers/*.{h, m, swift}'
 
   s.dependency 'TekCoreService', '~> 1.2.2'
-  s.dependency 'TekServiceInterfaces', '~> 0.2.43'
+  s.dependency 'TekServiceInterfaces', '~> 0.2.51'
   s.dependency 'TerraInstancesManager'
 
 end
