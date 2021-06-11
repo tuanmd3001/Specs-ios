@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'LoyaltyComponent'
-    s.version          = '0.1.25'
+    s.version          = '0.1.25-hotfix'
     s.summary          = 'LoyaltyComponent'
   
     s.description      = <<-DESC
