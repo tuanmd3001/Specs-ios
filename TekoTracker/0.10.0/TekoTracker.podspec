@@ -48,7 +48,7 @@ TODO: Add long description of the pod here.
   s.dependency 'DeviceKit'
   s.dependency 'ReachabilitySwift'
   s.dependency 'RxSwift', '~> 5.0'
-  s.dependency 'SwiftFootprint', '~> 1.0.1'
+  s.dependency 'SwiftFootprint', '~> 1.3.0'
   s.dependency 'TerraInstancesManager', '~> 1.2.17'
 
   # s.ios.deployment_target = '10.0'
