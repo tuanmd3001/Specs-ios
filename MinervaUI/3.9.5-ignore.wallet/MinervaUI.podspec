@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/38508331',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/38509879',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -50,7 +50,7 @@ Pod::Spec.new do |s|
     s.dependency 'LoyaltyComponent', '~> 0.3.0'
     s.dependency 'ApolloTheme', '~> 0.2.0'
 
-    s.dependency 'VnpayWalletSDK', '~> 1.0.2'
+    # s.dependency 'VnpayWalletSDK', '~> 1.0.2'
     s.dependency 'Kingfisher', '~> 6.0'
     s.dependency 'SVProgressHUD'
     s.dependency 'SnapKit'
