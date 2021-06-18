@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
     s.dependency 'NSObject+Rx'
     s.dependency 'MBProgressHUD', '~> 1.2.0'
     s.dependency 'RxDataSources'
-    s.dependency 'Apollo', '~> 0.4.26'
+    s.dependency 'Apollo', '~> 1.0.0'
     s.dependency 'TerraInstancesManager'
     s.dependency 'TekCoreService'
     s.dependency 'TekCoreNetwork' 
