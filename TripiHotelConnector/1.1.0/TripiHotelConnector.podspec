@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/38853321',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/38854951',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -46,6 +46,6 @@ Pod::Spec.new do |s|
   
     # dependency
     s.dependency 'HestiaIOS', '~> 2.6.2'
-    s.dependency 'TripiFlightPaymentKit', '~> 1.1.0'
+    s.dependency 'TripiHotelPaymentKit', '~> 1.1.0'
 
   end
