@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/38894604',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/38898242',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
     s.public_header_files = 'TripiHotelKit.framework/Headers/*.h'
     s.source_files = 'TripiHotelKit.framework/Headers/*.{h, m, swift}'
   
-    s.dependency 'TripiCommon', '~> 1.1.0'
+    s.dependency 'TripiCommon', '~> 1.1.1'
     s.dependency 'Cosmos', '~> 18.0'
     s.dependency 'SVProgressHUD'
     s.dependency 'IQKeyboardManagerSwift', '~> 6.5.0'
