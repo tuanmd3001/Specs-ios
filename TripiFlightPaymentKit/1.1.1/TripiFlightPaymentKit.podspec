@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/38894571',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/38898218',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
     s.public_header_files = 'TripiFlightPaymentKit.framework/Headers/*.h'
     s.source_files = 'TripiFlightPaymentKit.framework/Headers/*.{h, m, swift}'
   
-    s.dependency 'TripiCommon', '~> 1.1.0'
+    s.dependency 'TripiCommon', '~> 1.1.1'
     s.dependency 'MAPaymentKit', '~> 1.0.9'
 
   end
