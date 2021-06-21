@@ -57,7 +57,7 @@ Pod::Spec.new do |s|
     s.public_header_files = 'TerraInstancesManager.framework/Headers/*.h'
     s.source_files = 'TerraInstancesManager.framework/Headers/*.{h, m, swift}'
   
-    s.dependency 'TekCoreService', '~> 1.2.2'
+    s.dependency 'TekCoreService', '~> 1.3.0'
     s.dependency 'Logging'
 
 
