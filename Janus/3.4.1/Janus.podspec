@@ -28,11 +28,8 @@ Pod::Spec.new do |s|
     
     s.vendored_frameworks = 'Janus.framework'
   
-    s.public_header_files = 'Janus.framework/Headers/*.h'
-    s.source_files = 'Janus.framework/Headers/*.{h, m, swift}'
-  
-    s.dependency 'TekCoreService', '~> 1.2.11'
+    s.dependency 'TekCoreService', '~> 1.3.0'
     s.dependency 'SwiftyJSON', '~> 4.0'
-    s.dependency 'TerraInstancesManager', '~> 1.2.17'
+    s.dependency 'TerraInstancesManager', '~> 1.3.0'
     
   end
