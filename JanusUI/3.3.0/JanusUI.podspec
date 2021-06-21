@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
     s.dependency 'Kingfisher', '~> 6.0'
     s.dependency 'Toast-Swift', '~> 5.0.1'
     s.dependency 'MBProgressHUD', '~> 1.2.0'
-    s.dependency 'Apollo', '~> 0.4.26'
+    s.dependency 'Apollo', '~> 1.0.0'
     s.dependency 'Terra', '~> 2.5.3'
     
   end
