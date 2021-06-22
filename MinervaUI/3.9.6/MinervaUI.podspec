@@ -56,5 +56,6 @@ Pod::Spec.new do |s|
     s.dependency 'SnapKit'
     s.dependency 'Toast-Swift', '~> 5.0.0'
     s.dependency 'FittedSheets'
+    s.dependency 'TekoTracker', '~> 0.10.11'
 
   end

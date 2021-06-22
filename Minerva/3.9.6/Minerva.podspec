@@ -52,6 +52,7 @@ Pod::Spec.new do |s|
     s.dependency 'BerTlv'
     s.dependency 'SwiftyJSON', '~> 4.0'
     s.dependency 'Logging'
+    s.dependency 'TekoTracker', '~> 0.10.11'
 
 
   end
