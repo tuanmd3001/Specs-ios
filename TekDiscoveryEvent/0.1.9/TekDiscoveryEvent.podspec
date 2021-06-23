@@ -33,6 +33,6 @@ Pod::Spec.new do |s|
     s.dependency 'TekListingService', '~> 3.0.1'
     s.dependency 'TekPolicyService', '~> 3.0.1'
     s.dependency 'TekSearchService', '~> 3.0.1'
-    s.dependency 'TekDiscoveryCore'
+    s.dependency 'TekDiscoveryCore', '~> 0.0.5'
     s.dependency 'TerraInstancesManager'
   end
