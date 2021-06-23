@@ -29,24 +29,6 @@ Pod::Spec.new do |s|
     s.source_files = 'TekDiscoveryCore.framework/Headers/*.{h,m,swift}'
   
     # dependency
-    s.dependency 'Kingfisher', '~> 6.0'
-    s.dependency 'UIColor_Hex_Swift', '~> 4.0.2'
-    s.dependency 'Toast-Swift', '~> 5.0.0'
-    s.dependency 'FittedSheets', '~> 1.4.5'
-    s.dependency 'VPAttributedFormat', '~> 1.2.5'
-    s.dependency 'TTTAttributedLabel'
-    s.dependency 'FittedSheets'
-    s.dependency 'DifferenceKit'
-    s.dependency 'SkeletonView', '~> 1.8.7'
-    s.dependency 'BSImagePicker', '~> 3.3.1'
-    s.dependency 'IQKeyboardManagerSwift', '6.5.0'
-    s.dependency 'RxCocoa', '~> 5.1.0'
-    s.dependency 'RxSwift', '~> 5.1.0'
-    s.dependency 'RxRelay', '~> 5.1.0'
-    s.dependency 'GooglePlaces', '~> 3.4.0'
-    s.dependency 'GoogleMaps', '~> 3.4.0'
-    s.dependency 'JWTDecode', '~> 2.4'
-    # mediaPreview
-    s.dependency 'TekoMediaPreview', '~> 0.0.2'
-    s.dependency 'TekoTracker', '~> 0.7.5'
+    s.dependency 'TekCoreService'
+    s.dependency 'TerraInstancesManager'
   end
