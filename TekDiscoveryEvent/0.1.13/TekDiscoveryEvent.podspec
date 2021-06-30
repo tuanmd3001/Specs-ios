@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
     s.source_files = 'TekDiscoveryEvent.framework/Headers/*.{h,m,swift}'
   
     # dependency
-    s.dependency 'TekCoreService', '~> 1.3.0'
+    s.dependency 'TekCoreService', '~> 1.2.11'
     s.dependency 'TekListingService', '~> 3.0.1'
     s.dependency 'TekPolicyService', '~> 3.0.1'
     s.dependency 'TekSearchService', '~> 3.0.1'
