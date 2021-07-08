@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = 'MinervaUI.xcframework'
   
     # dependency
-    s.dependency 'Minerva', '~> 3.9.7'
+    s.dependency 'Minerva', '~> 3.10.1'
     s.dependency 'Apollo', '~> 1.0.0'
     s.dependency 'LoyaltyComponent', '~> 0.3.0'
     s.dependency 'ApolloTheme', '~> 0.2.0'
