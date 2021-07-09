@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
     s.dependency 'Janus', '~> 3.3.3'
     s.dependency 'JanusFacebook', '~> 3.3.2'
     s.dependency 'JanusGoogle', '~> 3.3.2'
-    s.dependency 'JanusApple', '~> 3.3.2'
+    s.dependency 'JanusApple', '~> 3.3.3'
     s.dependency 'Kingfisher', '~> 6.0'
     s.dependency 'Toast-Swift', '~> 5.0.1'
     s.dependency 'MBProgressHUD', '~> 1.2.0'
