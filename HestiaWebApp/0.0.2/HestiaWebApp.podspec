@@ -57,7 +57,7 @@ Pod::Spec.new do |s|
     s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
     # dependency
-    s.dependency 'Janus', '~> 3.2.6'
+    s.dependency 'Janus', '~> 3.3.2'
     s.dependency 'Hestia', '~> 2.7.1'
   
   end
