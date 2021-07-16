@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
     s.source_files = 'OrderUI.framework/Headers/*.{h, m, swift}'
   
     # dependency
-    s.dependency 'OrderCore', '~> 0.10.3'
+    s.dependency 'OrderCore', '~> 0.10.4'
     s.dependency 'RxSwift', '~> 5'
     s.dependency 'RxCocoa', '~> 5'
     s.dependency 'SnapKit'
