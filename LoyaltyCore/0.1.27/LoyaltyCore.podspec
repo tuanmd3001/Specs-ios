@@ -31,7 +31,6 @@ Pod::Spec.new do |s|
     s.dependency 'TekCoreNetwork'
     s.dependency 'TekCoreService'
     s.dependency 'TerraInstancesManager'
-    s.dependency 'Terra', '~> 2.5.3'
     s.dependency 'Logging'
     s.dependency 'LoyaltyModel', '~> 0.1.23'
     
