@@ -37,6 +37,7 @@ Pod::Spec.new do |s|
     s.dependency 'JVFloatLabeledTextField', '~> 1.1.1'
     s.dependency 'MarqueeLabel', '~> 3.2.0'
     s.dependency 'Moya/RxSwift', '~> 14.0'
+    s.dependency 'RxSwift', '~> 5'
     s.dependency 'RxCocoa', '~> 5'
     s.dependency 'Alamofire', '~> 5.3.0'
     s.dependency 'SkeletonView'
