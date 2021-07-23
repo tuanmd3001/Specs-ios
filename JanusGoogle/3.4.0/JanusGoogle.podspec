@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/38946700',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/40862400',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -20,14 +20,13 @@ Pod::Spec.new do |s|
                          }
   
     s.ios.deployment_target = '10.0'
-  
-    s.pod_target_xcconfig = {
-      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-    }
+
+    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
     s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
     
+    s.vendored_frameworks = 'JanusGoogle.xcframework'
   
     s.dependency 'GoogleSignIn', '~> 5.0.2'
-    s.dependency 'Janus', '~> 3.4.1'
+    s.dependency 'Janus', '~> 3.4.2'
     
   end
