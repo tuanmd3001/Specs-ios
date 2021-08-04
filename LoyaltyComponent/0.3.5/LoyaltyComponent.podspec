@@ -34,7 +34,6 @@ Pod::Spec.new do |s|
     s.dependency 'ApolloTheme'
     s.dependency 'Apollo'
     s.dependency 'LoyaltyModel', '~> 0.1.15'
-    s.dependency 'GoogleMLKit/BarcodeScanning'
     s.dependency 'SkeletonView'
     
   end
