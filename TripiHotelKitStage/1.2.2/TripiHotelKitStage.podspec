@@ -22,14 +22,13 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '10.0'
   
     s.pod_target_xcconfig = {
+      "OTHER_LDFLAGS" => '$(inherited) -framework "GoogleMaps",
+      "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => 'YES',
+      "FRAMEWORK_SEARCH_PATHS" => '$(inherited) "${PODS_ROOT}/GoogleMaps/Frameworks",
       'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
     }
     s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-    s.pod_target_xcconfig = {
-        "OTHER_LDFLAGS" => '$(inherited) -framework "GoogleMaps",
-        "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => 'YES',
-        "FRAMEWORK_SEARCH_PATHS" => '$(inherited) "${PODS_ROOT}/GoogleMaps/Frameworks",
-    }
+
     s.vendored_frameworks = 'TripiHotelKit.framework'
   
     s.dependency 'TripiCommon', '~> 1.1.1'
