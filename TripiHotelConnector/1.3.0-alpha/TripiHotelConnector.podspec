@@ -43,6 +43,6 @@ Pod::Spec.new do |s|
   
     # dependency
     s.dependency 'HestiaIOS', '~> 2.8.4'
-    s.dependency 'TripiHotelPaymentKit'
+    s.dependency 'TripiHotelPaymentKit', '1.3.0-alpha'
 
   end
