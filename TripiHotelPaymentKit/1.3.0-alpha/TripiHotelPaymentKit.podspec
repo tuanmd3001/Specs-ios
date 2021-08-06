@@ -30,5 +30,6 @@ Pod::Spec.new do |s|
   
     s.dependency 'TripiCommon', '~> 1.1.1'
     s.dependency 'MAPaymentKit', '~> 1.2.1'
+    s.dependency 'TripiHotelKitStage', '~> 1.2.2'
 
   end
