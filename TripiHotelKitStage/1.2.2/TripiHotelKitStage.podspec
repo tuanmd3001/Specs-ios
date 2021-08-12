@@ -22,9 +22,9 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '10.0'
   
     s.pod_target_xcconfig = {
-      "OTHER_LDFLAGS" => '$(inherited) -framework "GoogleMaps"',
-      "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => 'YES',
-      "FRAMEWORK_SEARCH_PATHS" => '$(inherited) "${PODS_ROOT}/GoogleMaps/Base/Frameworks" "${PODS_ROOT}/GoogleMaps/Maps/Frameworks"',
+      "OTHER_LDFLAGS" => '$(inherited) -all_load',
+#       "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => 'YES',
+#       "FRAMEWORK_SEARCH_PATHS" => '$(inherited) "${PODS_ROOT}/GoogleMaps/Base/Frameworks" "${PODS_ROOT}/GoogleMaps/Maps/Frameworks"',
       'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
     }
     s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
     s.dependency 'SkeletonView'
     s.dependency 'UPCarouselFlowLayout'
     s.dependency 'RealmSwift'
-#     s.dependency 'GoogleMaps', '~> 3.4.0'
+    s.dependency 'GoogleMaps', '~> 3.4.0'
     s.dependency 'MAPaymentKit', '~> 1.2.1'
     
   end
