@@ -22,9 +22,9 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '10.0'
   
     s.pod_target_xcconfig = {
-      "OTHER_LDFLAGS" => '$(inherited) -all_load',
-#       "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => 'YES',
-#       "FRAMEWORK_SEARCH_PATHS" => '$(inherited) "${PODS_ROOT}/GoogleMaps/Base/Frameworks" "${PODS_ROOT}/GoogleMaps/Maps/Frameworks"',
+      "OTHER_LDFLAGS" => '$(inherited) -all_load -framework "GoogleMaps" -framework "GoogleMapsBase" -framework "GoogleMapsCore"',
+      "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => 'YES',
+      "FRAMEWORK_SEARCH_PATHS" => '$(inherited) "${PODS_ROOT}/GoogleMaps/Base/Frameworks" "${PODS_ROOT}/GoogleMaps/Maps/Frameworks"',
       'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
     }
     s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
