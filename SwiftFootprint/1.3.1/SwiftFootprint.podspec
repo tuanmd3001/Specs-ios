@@ -29,9 +29,7 @@ TODO: Add long description of the pod here.
 
   s.vendored_frameworks = 'SwiftFootprint.framework'
 
-  s.public_header_files = 'SwiftFootprint.framework/Headers/*.h'
-  s.source_files = 'SwiftFootprint.framework/Headers/*.{h, m, swift}'
-
+  s.dependency 'abseil'
   s.dependency 'TekoSwiftGRPC', '~> 0.11.2'
 
 end
