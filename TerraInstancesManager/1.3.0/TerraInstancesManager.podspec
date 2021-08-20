@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/38941669',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/42877371',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -37,28 +37,15 @@ Pod::Spec.new do |s|
   
     s.ios.deployment_target = '10.0'
   
-    # s.source_files = 'Tekit/Classes/**/*'
-    
-    # s.resource_bundles = {
-    #   'Tekit' => ['Tekit/Assets/*.png']
-    # }
-  
-    # s.public_header_files = 'Pod/Classes/**/*.h'
-    # s.frameworks = 'UIKit', 'MapKit'
-    # s.dependency 'AFNetworking', '~> 2.3'
-  
     s.pod_target_xcconfig = {
       'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
     }
     s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
     
-    s.vendored_frameworks = 'TerraInstancesManager.framework'
+    s.vendored_frameworks = 'TerraInstancesManager.xcframework'
   
-    s.public_header_files = 'TerraInstancesManager.framework/Headers/*.h'
-    s.source_files = 'TerraInstancesManager.framework/Headers/*.{h, m, swift}'
-  
-    s.dependency 'TekCoreService', '~> 1.3.0'
-    s.dependency 'Logging'
+    s.dependency 'TekCoreService', '~> 1.2.11'
+    s.dependency 'Hermes', '~> 1.1.0'
 
 
   end
