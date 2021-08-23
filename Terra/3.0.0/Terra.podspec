@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '$(git config user.name)' => '$(git config user.email)' }
   s.source           = {
-                         :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/34025943',
+                         :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/43080777',
                          :type => 'zip',
                          :headers => [
                            'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -35,31 +35,16 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  # s.source_files = 'Tekit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Tekit' => ['Tekit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
-
-  s.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
-  s.vendored_frameworks = 'Terra.framework'
-
-  s.public_header_files = 'Terra.framework/Headers/*.h'
-  s.source_files = 'Terra.framework/Headers/*.{h, m, swift}'
+  s.vendored_frameworks = 'Terra.xcframework'
 
   # dependency
-  s.dependency 'TekCoreService', '~> 1.2.2'
-  # s.dependency 'TekServiceInterfaces', '~> 0.2.45'
-  s.dependency 'TerraInstancesManager', '~> 3.0.0'
+  s.dependency 'TekCoreService', '~> 2.0'
+  s.dependency 'TerraInstancesManager', '~> 2.0'
   s.dependency 'Codextended'
   s.dependency 'CryptoSwift', '~> 1.3.2'
+  s.dependency 'Logging'
 
 end
