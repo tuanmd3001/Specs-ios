@@ -20,16 +20,17 @@ Pod::Spec.new do |s|
                          }
   
     s.ios.deployment_target = '10.0'
-  
-    s.pod_target_xcconfig = {
-      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-    }
+
     s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
     
     s.vendored_frameworks = 'TripiHotelKit.framework'
-  
-    s.public_header_files = 'TripiHotelKit.framework/Headers/*.h'
-    s.source_files = 'TripiHotelKit.framework/Headers/*.{h, m, swift}'
+
+    s.pod_target_xcconfig = {
+      "OTHER_LDFLAGS" => '$(inherited) -all_load -framework "GoogleMaps" -framework "GoogleMapsBase" -framework "GoogleMapsCore"',
+      "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => 'YES',
+      "FRAMEWORK_SEARCH_PATHS" => '$(inherited) "${PODS_ROOT}/GoogleMaps/Base/Frameworks" "${PODS_ROOT}/GoogleMaps/Maps/Frameworks"',
+      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+    }
   
     s.dependency 'TripiCommon', '~> 1.1.1'
     s.dependency 'Cosmos', '~> 18.0'
