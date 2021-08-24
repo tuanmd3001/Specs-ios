@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/42939740',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/43147475',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -42,7 +42,8 @@ Pod::Spec.new do |s|
     s.dependency 'Moya/RxSwift', '~> 14.0'
     s.dependency 'RxCocoa', '~> 5'
     s.dependency 'Alamofire', '~> 5.3.0'
-    s.dependency 'SkeletonView'
+    s.dependency 'SkeletonView', '~> 1.21.2'
+    s.dependency 'RxSwift', '~> 5'
     s.dependency 'UPCarouselFlowLayout'
     s.dependency 'RealmSwift'
     s.dependency 'MAPaymentKit', '~> 1.2.1'
