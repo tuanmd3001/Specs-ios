@@ -30,7 +30,9 @@ TODO: Add long description of the pod here.
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   s.vendored_frameworks = 'TripiHotelKit.framework'
-
+  s.public_header_files = 'TripiHotelKit.framework/Headers/*.h'
+  s.source_files = 'TripiHotelKit.framework/Headers/*.{h, m, swift}'
+  
   s.dependency 'TripiCommon', '~> 1.1.1'
   s.dependency 'Cosmos', '~> 18.0'
   s.dependency 'SVProgressHUD'
