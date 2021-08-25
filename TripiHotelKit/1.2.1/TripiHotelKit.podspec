@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TripiHotelKit'
-  s.version          = '1.2.1'
+  s.version          = '1.2.0'
   s.summary          = 'TripiHotelKit'
 
   s.description      = <<-DESC
@@ -11,7 +11,7 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '$(git config user.name)' => '$(git config user.email)' }
   s.source           = {
-                         :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/43147690',
+                         :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/43252383',
                          :type => 'zip',
                          :headers => [
                            'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -46,7 +46,7 @@ TODO: Add long description of the pod here.
   s.dependency 'SkeletonView', '~> 1.21.2'
   s.dependency 'UPCarouselFlowLayout'
   s.dependency 'RealmSwift'
-#   s.dependency 'GoogleMaps', '~> 3.4.0'
+  s.dependency 'GoogleMaps', '~> 3.4.0'
   s.dependency 'MAPaymentKit', '~> 1.2.1'
   
 end
