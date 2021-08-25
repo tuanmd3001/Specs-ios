@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TripiHotelKit'
-  s.version          = '1.2.0'
+  s.version          = '1.2.1'
   s.summary          = 'TripiHotelKit'
 
   s.description      = <<-DESC
