@@ -32,5 +32,6 @@ Pod::Spec.new do |s|
     s.dependency 'ESPullToRefresh', '~> 2.9.3'
     s.dependency 'Apollo', '~> 1.0.16'
     s.dependency 'ApolloTheme', '~> 1.0'
+    s.dependency 'FittedSheets', '~> 1.4.6'
       
   end
