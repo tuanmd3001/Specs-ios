@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/44447900',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/44452847',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
     s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
     # dependency
-    s.dependency 'TerraLoyaltyKit', '0.0.1-alpha'
+    s.dependency 'TerraLoyaltyKit', '~> 0.1'
     s.dependency 'TerraJsBridge', '~> 0.3'
   
   end
