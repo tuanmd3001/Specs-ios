@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '$(git config user.name)' => '$(git config user.email)' }
   s.source           = {
-                         :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/44664340',
+                         :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/44664673',
                          :type => 'zip',
                          :headers => [
                            'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -41,6 +41,7 @@ TODO: Add long description of the pod here.
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
   s.vendored_frameworks = 'TekMediaPreview.xcframework'
+  s.frameworks = 'UIKit', 'AVFoundation', 'Photos'
 
   # dependency
   s.dependency 'Kingfisher', '~> 6.0'
