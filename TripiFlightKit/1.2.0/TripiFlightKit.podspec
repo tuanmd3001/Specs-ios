@@ -46,6 +46,5 @@ Pod::Spec.new do |s|
     s.dependency 'RxSwift', '~> 5'
     s.dependency 'UPCarouselFlowLayout'
     s.dependency 'RealmSwift'
-    s.dependency 'MAPaymentKit', '~> 1.2.1'
 
   end
