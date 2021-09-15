@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/40742846',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/44800198',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
     s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
     s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
-    s.vendored_frameworks = 'TripiHotelConnector.framework'
+    s.vendored_frameworks = 'TripiHotelConnector.xcframework'
   
     # dependency
     s.dependency 'HestiaIOS', '~> 2.9'
