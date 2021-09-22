@@ -26,8 +26,8 @@ Pod::Spec.new do |s|
     
     s.vendored_frameworks = 'BillingAppSDK.xcframework'
   
-    s.dependency 'BillingPaymentSDK', '~> 1.1'
-    s.dependency 'BillingWebSDK', '~> 0.1'
+    s.dependency 'BillingPaymentSDK', '~> 1.1.1'
+    s.dependency 'BillingWebSDK', '~> 0.1.1'
     s.dependency 'HestiaIOS', '~> 2.9'
     s.dependency 'MAAuthKit', '~> 1.1'
 
