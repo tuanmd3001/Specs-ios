@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = 'TripiPrepaidKit.xcframework'
   
     # dependencies
-    s.dependency 'IQKeyboardManagerSwift', '~> 6.5.0'
+    s.dependency 'IQKeyboardManagerSwift', '6.5.0'
     s.dependency 'MAPaymentKit', '~> 2.0'
     
   end
