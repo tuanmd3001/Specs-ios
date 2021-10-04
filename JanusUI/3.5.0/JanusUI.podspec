@@ -33,6 +33,6 @@ Pod::Spec.new do |s|
     s.dependency 'Kingfisher', '~> 6.0'
     s.dependency 'Toast-Swift', '~> 5.0.1'
     s.dependency 'MBProgressHUD', '~> 1.2.0'
-    s.dependency 'Apollo', '~> 1.2'
+    s.dependency 'Apollo', '~> 1.0.16'
     
   end
