@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/46179196',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/46249992',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -50,7 +50,7 @@ Pod::Spec.new do |s|
     #decode
     s.dependency 'JWTDecode', '~> 2.4'
   
-    s.dependency 'Apollo'
+    s.dependency 'Apollo', '~> 1.1'
     s.dependency 'ApolloTheme'
     s.dependency 'TekDiscoveryEvent', '~> 1.0.0'
   end
