@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/46186433',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/46250267',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
     s.dependency 'NSObject+Rx'
     s.dependency 'MBProgressHUD', '~> 1.2.0'
     s.dependency 'RxDataSources'
-    s.dependency 'Apollo'
+    s.dependency 'Apollo', '~> 1.1'
     s.dependency 'TerraInstancesManager'
     s.dependency 'TekCoreService'
     s.dependency 'TekDiscoveryEvent', '~> 1.0.0'
