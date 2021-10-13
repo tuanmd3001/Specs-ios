@@ -55,5 +55,6 @@ Pod::Spec.new do |s|
     s.dependency 'Toast-Swift', '~> 5.0.0'
     s.dependency 'FittedSheets', '~> 1.4.6'
     s.dependency 'SkeletonView', '~> 1.21.2'
+    s.dependency 'TekBarcodeReader'
 
   end
