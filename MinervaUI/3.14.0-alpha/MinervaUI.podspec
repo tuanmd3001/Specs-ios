@@ -56,5 +56,6 @@ Pod::Spec.new do |s|
     s.dependency 'FittedSheets', '~> 1.4.6'
     s.dependency 'SkeletonView', '~> 1.21.2'
     s.dependency 'TekBarcodeReader'
+    s.dependency 'Terra'
 
   end
