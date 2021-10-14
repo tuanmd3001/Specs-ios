@@ -47,6 +47,7 @@ Pod::Spec.new do |s|
     s.dependency 'Apollo', '~> 1.0'
     s.dependency 'LoyaltyComponent', '~> 0.5'
     s.dependency 'ApolloTheme', '~> 1.0'
+    s.dependency 'TekBarcodeReader', '~> 0.1'
 
     s.dependency 'VnpayWalletSDK', '~> 1.0.3'
     s.dependency 'Kingfisher', '~> 6.0'
