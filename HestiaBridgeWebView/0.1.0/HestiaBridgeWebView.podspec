@@ -43,6 +43,6 @@ Pod::Spec.new do |s|
 
     # dependency
     s.dependency 'TerraJsBridge', '~> 0.3'
-    s.dependency 'CommonBridgeCommand', '~> 0.3.0-alpha.3'
+    s.dependency 'CommonBridgeCommand', '~> 0.2'
   
   end
