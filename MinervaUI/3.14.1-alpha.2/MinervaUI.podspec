@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/47340036',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/47405279',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -55,7 +55,5 @@ Pod::Spec.new do |s|
     s.dependency 'Toast-Swift', '~> 5.0.0'
     s.dependency 'FittedSheets', '~> 1.4.6'
     s.dependency 'SkeletonView', '~> 1.21.2'
-    s.dependency 'Terra', '~> 3.1'
-    s.dependency 'TekBarcodeReader'
 
   end
