@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
   
     # dependency
     s.dependency 'TekoTracker', '~> 1.0'
-    s.dependency 'Minerva', '~> 3.13'
+    s.dependency 'Minerva', '3.14.0-alpha'
     s.dependency 'Apollo', '~> 1.0'
     s.dependency 'LoyaltyComponent', '~> 0.5'
     s.dependency 'ApolloTheme', '~> 1.0'
@@ -55,5 +55,7 @@ Pod::Spec.new do |s|
     s.dependency 'Toast-Swift', '~> 5.0.0'
     s.dependency 'FittedSheets', '~> 1.4.6'
     s.dependency 'SkeletonView', '~> 1.21.2'
+    s.dependency 'Terra', '~> 3.1'
+    s.dependency 'TekBarcodeReader'
 
   end
