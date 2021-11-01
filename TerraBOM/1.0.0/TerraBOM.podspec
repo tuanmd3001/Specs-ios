@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
     s.dependency 'Apollo', '~> 1.2'
     s.dependency 'ApolloTheme', '~> 1.0'
 
-    s.dependency 'TerraJsBridge', '~> 0.3.0'
+    s.dependency 'TerraJsBridge', '~> 0.3'
 
     s.dependency 'Hestia', '~> 2.11'
     s.dependency 'HestiaIOS', '~> 2.9'
