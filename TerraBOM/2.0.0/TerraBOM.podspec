@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
     s.dependency 'MAPaymentKit', '~> 2.0'
     s.dependency 'Minerva', '~> 3.13'
     s.dependency 'MinervaUI', '~> 3.14'
-    s.dependency 'TekoTracker', '~> 1.1'
+    s.dependency 'TekoTracker', '~> 1.2'
 
     s.dependency 'Terra', '~> 3.1'
     s.dependency 'TerraInstancesManager', '~> 2.1'
