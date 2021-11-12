@@ -34,11 +34,11 @@ Pod::Spec.new do |s|
     s.dependency 'FittedSheets', '~> 1.4.6'
     s.dependency 'SkeletonView', '~> 1.21.2'
     s.dependency 'HestiaBridgeWebView', '~> 0.1'
-    s.dependency 'CommonBridgeCommand', '~> 0.3.0'
+    s.dependency 'CommonBridgeCommand', '~> 0.3'
     s.dependency 'JanusBridge', '~> 0.1'
     s.dependency 'Apollo', '~> 2.0'
     s.dependency 'ApolloTheme', '~> 1.0'
     s.dependency 'TerraInstancesManager', '~> 2.1'
-    s.dependency 'TekoTracker', '~> 1.0.0'
+    s.dependency 'TekoTracker', '~> 1.0'
       
   end
