@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = 'HestiaWebApp.xcframework'
 
     # dependency
-    s.dependency 'Hestia', '~> 2.13.0'
+    s.dependency 'Hestia', '~> 2.13'
     s.dependency 'Terra', '~> 3.0'
 
     s.dependency 'CommonBridgeCommand', '~> 0.2'

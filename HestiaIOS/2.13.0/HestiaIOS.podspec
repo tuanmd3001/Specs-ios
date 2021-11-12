@@ -42,6 +42,6 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = 'HestiaIOS.xcframework'
   
     # dependency
-    s.dependency 'Hestia', '~> 2.13.0'
+    s.dependency 'Hestia', '~> 2.13'
   
   end
