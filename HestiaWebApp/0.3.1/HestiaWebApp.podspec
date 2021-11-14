@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/49234640',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/49397740',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = 'HestiaWebApp.xcframework'
 
     # dependency
-    s.dependency 'Hestia', '~> 2.12'
+    s.dependency 'Hestia', '~> 2.13'
     s.dependency 'Terra', '~> 3.0'
 
     s.dependency 'CommonBridgeCommand', '~> 0.2'
