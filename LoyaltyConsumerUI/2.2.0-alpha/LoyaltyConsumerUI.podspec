@@ -40,5 +40,5 @@ Pod::Spec.new do |s|
     s.dependency 'ApolloTheme', '~> 1.0'
     s.dependency 'TerraInstancesManager', '~> 2.1'
     s.dependency 'TekoTracker', '~> 1.0'
-    s.dependency 'LoyaltyBridge', '~> 0.2.0-alpha'
+    s.dependency 'LoyaltyBridge', '~> 0.2.0-alpha.1'
   end
