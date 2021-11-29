@@ -53,5 +53,6 @@ Pod::Spec.new do |s|
     s.dependency 'SnapKit', '~> 5.0.1'
     s.dependency 'FittedSheets', '~> 1.4.6'
     s.dependency 'SkeletonView', '~> 1.21.2'
+    s.dependency 'TerraUtilities', '0.0.1-alpha.2'
 
   end
