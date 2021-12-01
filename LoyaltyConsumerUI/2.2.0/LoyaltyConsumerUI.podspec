@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = 'LoyaltyConsumerUI.xcframework'
   
     s.dependency 'LoyaltyModel', '~> 1.1'
-    s.dependency 'LoyaltyCore', '~> 1.3.0'
+    s.dependency 'LoyaltyCore', '~> 1.3'
     s.dependency 'ESPullToRefresh', '~> 2.9.3'
     s.dependency 'FittedSheets', '~> 1.4.6'
     s.dependency 'SkeletonView', '~> 1.21.2'
@@ -40,5 +40,5 @@ Pod::Spec.new do |s|
     s.dependency 'ApolloTheme', '~> 1.0'
     s.dependency 'TerraInstancesManager', '~> 2.1'
     s.dependency 'TekoTracker', '~> 1.0'
-    s.dependency 'LoyaltyBridge', '~> 0.2.0'
+    s.dependency 'LoyaltyBridge', '~> 0.2'
   end
