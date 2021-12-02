@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'TekoTracker'
   s.version          = '1.3.0-alpha.1'
-  s.summary          = 'TekoTracker framework'
+  s.summary          = 'A short description of TekoTracker.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/50805837',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/50819448',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -40,11 +40,48 @@ TODO: Add long description of the pod here.
 
   s.vendored_frameworks = 'TekoTracker.xcframework'
 
+  # s.vendored_frameworks = 'TekoTracker.framework'
+  # s.public_header_files = 'TekoTracker.framework/Headers/*.h'
+  # s.source_files = 'TekoTracker.framework/Headers/*.{h, m, swift}'
+
   s.dependency 'Alamofire', '~> 5.3.0'
   s.dependency 'DeviceKit'
   s.dependency 'ReachabilitySwift'
   s.dependency 'RxSwift', '~> 5.0'
   s.dependency 'SwiftFootprint', '~> 1.4'
   s.dependency 'TerraInstancesManager', '~> 2.1'
+
+  # s.ios.deployment_target = '10.0'
+  # s.requires_arc = true
+  # s.swift_version = "5.1"
+  # s.prefix_header_file = false
+  # s.module_name = s.name
+  
+  # s.default_subspec = 'Core'
+  
+  # s.subspec 'Core' do |ss|
+  #   ss.source_files = 'TekoTracker/Source/Core/**/*.{h,m,mm,swift,xcdatamodeld,xcmappingmodel}'
+  #   ss.resources = 'TekoTracker/Source/Core/Storage/Resources/**/*.{xcdatamodeld,xcmappingmodel}'
+  #   ss.private_header_files = 'TekoTracker/Source/Core/**/*+Internal.h'
+  #   ss.dependency 'Alamofire', '5.3.0'
+  #   ss.dependency 'DeviceKit'
+  #   ss.dependency 'ReachabilitySwift'
+  #   ss.dependency 'RxSwift'
+  #   # ss.dependency 'Footprint'
+  #   ss.frameworks = 'UIKit', 'Foundation', 'CoreData'
+  # end
+  
+  # s.subspec 'Ecommerce' do |ss|
+  #   ss.source_files = 'TekoTracker/Source/Ecommerce/**/*.{h,m,mm,swift,xcdatamodeld,xcmappingmodel}'
+  #   ss.private_header_files = 'TekoTracker/Source/Ecommerce/**/*+Internal.h'
+  #   ss.dependency 'TekoTracker/Core'
+  # end
+
+  # s.subspec 'Terra' do |ss|
+  #   ss.source_files = 'TekoTracker/Source/TerraTracker/**/*.{h,m,mm,swift,xcdatamodeld,xcmappingmodel}'
+  #   ss.private_header_files = 'TekoTracker/Source/TerraTracker/**/*+Internal.h'
+  #   ss.dependency 'TekoTracker/Core'
+  #   ss.dependency 'TerraInstancesManager'
+  # end
 
 end
