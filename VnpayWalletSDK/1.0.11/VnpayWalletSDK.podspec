@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 	s.name                   = 'VnpayWalletSDK'
-	s.version                = '1.0.11-alpha.1'
+	s.version                = '1.0.11'
 	s.summary                = 'VnpayWalletSDK.framework'
 	s.homepage               = 'https://github.com/teko-vn/Specs-ios.git'
 	s.license                = { :type => 'MIT', :file => 'LICENSE' }
