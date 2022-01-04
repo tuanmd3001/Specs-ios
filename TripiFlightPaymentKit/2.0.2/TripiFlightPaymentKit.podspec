@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
     }
     s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
     
-    s.vendored_frameworks = 'TripiFlightPaymentKit.framework'
+    s.vendored_frameworks = 'TripiFlightPaymentKit.xcframework'
   
     s.dependency 'TripiCommon', '~> 1.1.2'
     s.dependency 'MAPaymentKit', '~> 2.0'
