@@ -26,10 +26,7 @@ Pod::Spec.new do |s|
     }
     s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
     
-    s.vendored_frameworks = 'TripiFlightKit.framework'
-  
-    s.public_header_files = 'TripiFlightKit.framework/Headers/*.h'
-    s.source_files = 'TripiFlightKit.framework/Headers/*.{h, m, swift}'
+    s.vendored_frameworks = 'TripiFlightKit.xcframework'
   
     s.dependency 'TripiCommon', '~> 1.1.2'
     s.dependency 'Cosmos', '~> 18.0'
