@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/51727012',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/53425351',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -48,7 +48,7 @@ TODO: Add long description of the pod here.
   s.dependency 'DeviceKit'
   s.dependency 'ReachabilitySwift'
   s.dependency 'RxSwift', '~> 5.0'
-  s.dependency 'SwiftFootprint', '~> 1.4'
+  s.dependency 'SwiftFootprint', '~> 1.5'
   s.dependency 'TerraInstancesManager', '~> 2.1'
 
   # s.ios.deployment_target = '10.0'
