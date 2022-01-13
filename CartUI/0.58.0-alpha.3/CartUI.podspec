@@ -32,6 +32,7 @@ Pod::Spec.new do |s|
   # dependency
   # core
   s.dependency 'CartCore', '0.58.0-alpha.3'
+  s.dependency 'abseil'
 
   # Terra
   s.dependency 'Terra', '~> 3.0'
@@ -55,7 +56,6 @@ Pod::Spec.new do |s|
   s.dependency 'SnapKit'
   s.dependency 'Nantes'
   s.dependency 'JTAppleCalendar', '~> 8.0'
-  s.dependency 'abseil'
 
   # rx
   s.dependency 'RxCocoa', '~> 5'
