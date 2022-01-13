@@ -55,6 +55,7 @@ Pod::Spec.new do |s|
   s.dependency 'SnapKit'
   s.dependency 'Nantes'
   s.dependency 'JTAppleCalendar', '~> 8.0'
+  s.dependency 'abseil'
 
   # rx
   s.dependency 'RxCocoa', '~> 5'
