@@ -47,5 +47,6 @@ Pod::Spec.new do |s|
     s.dependency 'ApolloTheme', '~> 1.0'
     s.dependency 'SnapKit', '~> 5.0.1'
     s.dependency 'SkeletonView', '~> 1.21.2'
+    s.dependency 'Swinject', '~> 2.8.1'
 
   end
