@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
     # dependency
     s.dependency 'Terra', '~> 3.0'
     s.dependency 'TekoTracker', '~> 1.0'
-    s.dependency 'Minerva', '3.15.0'
+    s.dependency 'Minerva', '~> 3.18'
     s.dependency 'Apollo', '~> 2.0'
     s.dependency 'LoyaltyComponent', '~> 1.3'
     s.dependency 'ApolloTheme', '~> 1.0'
