@@ -39,6 +39,6 @@ Pod::Spec.new do |s|
     s.dependency 'Apollo', '~> 2.0'
     s.dependency 'ApolloTheme', '~> 1.0'
     s.dependency 'TerraInstancesManager', '~> 2.1'
-    s.dependency 'TekoTracker', '~> 1.0.0'
+    s.dependency 'TekoTracker', '~> 1.0'
       
   end
