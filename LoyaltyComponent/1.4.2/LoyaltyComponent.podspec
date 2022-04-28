@@ -35,5 +35,6 @@ Pod::Spec.new do |s|
     s.dependency 'LoyaltyModel', '~> 1.3'
     s.dependency 'SkeletonView', '~> 1.21.2'
     s.dependency 'TekBarcodeReader', '~> 0.1'
-    
+    s.dependency 'TekLocalize', '~> 0.1'
+
   end
