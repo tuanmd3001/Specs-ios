@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/66170194',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/66660383',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -26,4 +26,5 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = 'UserFlutterBridge.xcframework'
   
     s.dependency 'TerraInstancesManager', '~> 2.1'
+    s.dependency 'TekLocalize', '~> 0.1'
   end
