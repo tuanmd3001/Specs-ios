@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/67753035',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/67768082',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -29,6 +29,7 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = 'LoyaltyConsumerUI.xcframework'
   
     s.dependency 'LoyaltyCore', '2.0.0-alpha'
+    s.dependency 'LoyaltyModel', '2.0.0-alpha'
     s.dependency 'ESPullToRefresh', '~> 2.9.3'
     s.dependency 'FittedSheets', '~> 1.4.6'
     s.dependency 'SkeletonView', '~> 1.21.2'
