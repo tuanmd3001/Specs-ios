@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/67774558',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/68519153',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -44,13 +44,13 @@ Pod::Spec.new do |s|
     # dependency
     s.dependency 'Terra', '~> 3.0'
     s.dependency 'TekoTracker', '~> 1.0'
-    s.dependency 'Minerva', '~> 5.0'
+    s.dependency 'Minerva', '~> 5.1'
     s.dependency 'Apollo', '~> 2.0'
     s.dependency 'LoyaltyComponent', '2.0.0-alpha'
     s.dependency 'ApolloTheme', '~> 1.0'
     s.dependency 'TekLocalize', '~> 0.1'
 
-    s.dependency 'VnpayWalletSDK', '3.0.0-alpha'
+    s.dependency 'VnpayWalletSDK', '~> 3.0.0'
     s.dependency 'SnapKit', '~> 5.0.1'
     s.dependency 'FittedSheets', '~> 1.4.6'
     s.dependency 'SkeletonView', '~> 1.21.2'
