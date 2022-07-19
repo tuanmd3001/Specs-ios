@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
     
     s.vendored_frameworks = 'LoyaltyStaffUI.xcframework'
   
-    s.dependency 'LoyaltyCore', '~> 2.0.0'
+    s.dependency 'LoyaltyCore', '~> 2.0'
     s.dependency 'ESPullToRefresh', '~> 2.9.3'
     s.dependency 'Apollo', '~> 2.0'
     s.dependency 'ApolloTheme', '~> 1.0'
