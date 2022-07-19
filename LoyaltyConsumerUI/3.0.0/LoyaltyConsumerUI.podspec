@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
     
     s.vendored_frameworks = 'LoyaltyConsumerUI.xcframework'
   
-    s.dependency 'LoyaltyCore', '~> 2.0.0'
+    s.dependency 'LoyaltyCore', '~> 2.0'
     s.dependency 'ESPullToRefresh', '~> 2.9.3'
     s.dependency 'FittedSheets', '~> 1.4.6'
     s.dependency 'SkeletonView', '~> 1.21.2'
