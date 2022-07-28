@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
   
     # dependency
     s.dependency 'Nuke', '~> 8.0'
-    s.dependency 'SVProgressHUD'
+    s.dependency 'SVProgressHUD', '~> 2.2'
     s.dependency 'FittedSheets', '~> 1.4.6'
     s.dependency 'FSCalendar', '~> 2.8.4'
     s.dependency 'TekLocalize', '~> 0.1'
