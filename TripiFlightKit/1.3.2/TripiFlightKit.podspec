@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   
     s.dependency 'TripiCommon', '~> 1.1.1'
     s.dependency 'Cosmos', '~> 18.0'
-    s.dependency 'SVProgressHUD', '~> 1.1.3'
+    s.dependency 'SVProgressHUD'
     s.dependency 'IQKeyboardManagerSwift', '6.5.0'
     s.dependency 'Toast-Swift', '~> 5.0.0'
     s.dependency 'SDWebImage', '~> 5.1.1'
