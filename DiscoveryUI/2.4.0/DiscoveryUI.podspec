@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/78143135',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/78294461',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
     s.dependency 'IQKeyboardManagerSwift', '6.5.0'
     s.dependency 'DeviceKit'
     s.dependency 'ESPullToRefresh'
-    s.dependency 'SnapKit'
+    s.dependency 'SnapKit', '~> 5.0.1'
     #realm
     s.dependency 'RxRealm'
     s.dependency 'RealmSwift', '~> 10.20.0'
