@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = 'CartPaymentUISDK.xcframework'
   
     # dependency
-    s.dependency 'CartPaymentCoreSDK', '~> 2.0'
+    s.dependency 'CartPaymentCoreSDK', '~> 2.1.0-alpha.1'
     s.dependency 'TekLocalize', '~> 0.1'
     s.dependency 'Apollo', '~> 3.0'
     s.dependency 'ApolloTheme', '~> 1.0'
