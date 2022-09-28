@@ -41,7 +41,7 @@ Pod::Spec.new do |s|
   s.dependency 'TerraInstancesManager', '~> 2.1'
 
   # Apollo
-  s.dependency 'Apollo', '~> 2.1'
+  s.dependency 'Apollo', '~> 3.0'
   s.dependency 'ApolloTheme' , '~> 1.0'
 
   # Tracker
