@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/80244810',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/80722486',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
     
     s.vendored_frameworks = 'JanusUI.xcframework'
   
-    s.dependency 'Janus', '~> 3.7'
+    s.dependency 'Janus', '~> 3.8'
     s.dependency 'JanusFacebook', '~> 4.0'
     s.dependency 'JanusGoogle', '~> 3.5'
     s.dependency 'JanusApple', '~> 3.5'
