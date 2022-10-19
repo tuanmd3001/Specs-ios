@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/81528935',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/81530085',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -43,5 +43,4 @@ Pod::Spec.new do |s|
     s.dependency 'RSBarcodes_Swift', '~> 5.1.1'
     s.dependency 'TekBarcodeReader', '~> 0.1'
     s.dependency 'SnapKit', '~> 5.0.1'
-
   end
