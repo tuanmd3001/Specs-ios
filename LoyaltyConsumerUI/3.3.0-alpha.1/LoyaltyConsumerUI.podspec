@@ -42,5 +42,6 @@ Pod::Spec.new do |s|
     s.dependency 'LoyaltyBridge', '~> 0.2'
     s.dependency 'RSBarcodes_Swift', '~> 5.1.1'
     s.dependency 'TekBarcodeReader', '~> 0.1'
+    s.dependency 'SnapKit', '~> 5.0.1'
 
   end
