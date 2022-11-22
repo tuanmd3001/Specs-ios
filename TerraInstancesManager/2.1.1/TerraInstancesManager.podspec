@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
     
     s.vendored_frameworks = 'TerraInstancesManager.xcframework'
   
-    s.dependency 'TekCoreService', '~> 2.1'
+    s.dependency 'TekCoreService', '~> 2.2'
     s.dependency 'Hermes', '~> 1.4'
 
 
