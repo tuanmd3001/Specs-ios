@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/87547049',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/87547865',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = 'TopupAppSDK.xcframework'
   
     s.dependency 'TopupPaymentSDK', '~> 0.1.0-TERRA1045'
-    s.dependency 'BillingWebSDK', '~> 1.2'
+    s.dependency 'BillingWebSDK', '~> 1.2.1-TERRA1045'
     s.dependency 'HestiaIOS', '~> 2.14'
     s.dependency 'MAAuthKit', '~> 1.2'
 
