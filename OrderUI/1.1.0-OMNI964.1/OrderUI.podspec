@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/89721583',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/89724211',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
     s.dependency 'FittedSheets'
     s.dependency 'ESPullToRefresh'
         
-    s.dependency 'OrderCore', '~> 1.0'
+    s.dependency 'OrderCore', '1.1.0-OMNI964.1'
     s.dependency 'Apollo', '~> 3.0'
     s.dependency 'TerraInstancesManager', '~> 2.1'
     s.dependency 'TekCoreService', '~> 2.1'
