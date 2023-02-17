@@ -25,7 +25,8 @@ Pod::Spec.new do |s|
 
     s.vendored_frameworks = 'OrderUISDK.xcframework'
   
-    # dependency
+    # dependencies
+    ## cocoaPods
     s.dependency 'RxSwift', '~> 5'
     s.dependency 'RxCocoa', '~> 5'
     s.dependency 'SnapKit'
@@ -36,13 +37,22 @@ Pod::Spec.new do |s|
     s.dependency 'FittedSheets'
     s.dependency 'ESPullToRefresh'
         
-    s.dependency 'OrderCoreSDK', '~> 2.0'
+    ## apolloPods
     s.dependency 'Apollo', '~> 3.0'
-    s.dependency 'TerraInstancesManager', '~> 2.1'
-    s.dependency 'TekCoreService', '~> 2.1'
+    s.dependency 'ApolloTheme', '~> 1.0'
+
+    ## terraPods
     s.dependency 'TerraJsBridge', '~> 0.3'
+    s.dependency 'TekCoreService', '~> 2.1'
+    s.dependency 'TerraInstancesManager', '~> 2.1'
+
+    ## otherPods
+    s.dependency 'OrderCoreSDK', '~> 2.0'
     s.dependency 'CommonBridgeCommand', '~> 0.3'
     s.dependency 'ShopFrontWebCoreSDK', '~> 0.1'
-    s.dependency 'TekoTracker', '~> 1.2'
     s.dependency 'TekLocalize', '~> 0.1'
+    s.dependency 'PaymentKitJsBridge', '~> 1.1'
+    s.dependency 'TekBarcodeReader', '~> 0.1'
+    s.dependency 'TekoTracker', '~> 1.2'
+    s.dependency 'Logging'
   end
