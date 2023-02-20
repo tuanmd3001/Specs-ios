@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
 
     ## terraPods
     s.dependency 'TerraJsBridge', '~> 0.3'
-    s.dependency 'TekCoreService', '~> 2.2'
+    s.dependency 'TekCoreService', '~> 2.1'
     s.dependency 'TerraInstancesManager', '~> 2.1'
 
     ## otherPods
