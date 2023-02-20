@@ -42,6 +42,7 @@ TODO: Add long description of the pod here.
 
   # dependency
   s.dependency 'TerraInstancesManager', '~> 2.1'
+  s.dependency 'Terra', '~> 3.2'
   s.dependency 'AppUpdateCore', '~> 0.1'
 
 end
