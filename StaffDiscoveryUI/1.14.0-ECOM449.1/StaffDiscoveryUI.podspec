@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
     s.dependency 'ESPullToRefresh'
     
     s.dependency 'TerraInstancesManager', '~> 2.1'
-    s.dependency 'TekDiscoveryEvent', '~> 4.6'
+    s.dependency 'TekDiscoveryEvent', '5.0.0-ECOM449.3'
     s.dependency 'TekWmsService', '~> 0.0'
     s.dependency 'TekLocalize', '~> 0.1'
     s.dependency 'Apollo', '~> 3.4'
