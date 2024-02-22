@@ -22,6 +22,6 @@ Pod::Spec.new do |s|
     s.dependency 'SwiftNIOSSL', '>= 2.10.1', '< 3'
     s.dependency 'SwiftNIOTransportServices', '>= 1.9.1', '< 2'
     s.dependency 'SwiftProtobuf', '>= 1.14.0', '< 2'
-    s.dependency 'CGRPCZlib', s.version.to_s
+    s.dependency 'TekoCGRPCZlib', s.version.to_s
 
 end
