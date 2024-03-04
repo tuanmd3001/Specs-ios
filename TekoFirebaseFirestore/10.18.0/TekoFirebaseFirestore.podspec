@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.description            = 'A replica Firebase Firestore podspec that provides pre-compiled binaries/frameworks instead'
   s.homepage               = 'http://invertase.io'
   s.license                = 'Apache-2.0'
-  s.source = { :git => 'https://github.com/invertase/firestore-ios-sdk-frameworks.git', :tag => firebase_firestore_version }
+  s.source                 = { :git => 'https://github.com/invertase/firestore-ios-sdk-frameworks.git', :tag => firebase_firestore_version }
   s.cocoapods_version      = '>= 1.10.0'
   s.authors                = 'Invertase Limited'
   s.pod_target_xcconfig    = { 'OTHER_LDFLAGS' => '-lObjC' }
@@ -33,8 +33,8 @@ Pod::Spec.new do |s|
   current_target_definition = Pod::Config.instance.podfile.send(:current_target_definition)
   current_definition_string = current_target_definition.to_hash.to_s
 
-  hasCloudFirestore = current_definition_string.include?('cloud_firestore')
-  hasRNFBFirestore = current_definition_string.include?('RNFBFirestore')
+  hasCloudFirestore         = current_definition_string.include?('cloud_firestore')
+  hasRNFBFirestore          = current_definition_string.include?('RNFBFirestore')
 
   # Base Pod gets everything except leveldb, which if included here may collide with inclusions elsewhere
   s.subspec 'Base' do |base|
@@ -96,12 +96,12 @@ Pod::Spec.new do |s|
 
   # NoLeveldb Pod deterministically gets all of FirebaseFirestore *except* leveldb, to ensure no symbol collisions
   s.subspec 'WithoutLeveldb' do |nodb|
-    nodb.dependency 'FirebaseFirestore/Base'
+    nodb.dependency 'TekoFirebaseFirestore/Base'
   end
 
   # WithLeveldb Pod deterministically gets all of FirebaseFirestore *and* leveldb
   s.subspec 'WithLeveldb' do |withdb|
-    withdb.dependency            'FirebaseFirestore/Base'
+    withdb.dependency            'TekoFirebaseFirestore/Base'
     withdb.vendored_frameworks = "FirebaseFirestore/*leveldb*"
     withdb.preserve_paths      = "FirebaseFirestore/*leveldb*"
   end
