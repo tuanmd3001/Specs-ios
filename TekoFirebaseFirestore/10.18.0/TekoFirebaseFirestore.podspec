@@ -1,7 +1,8 @@
 firebase_firestore_version = '10.18.0'
 
 Pod::Spec.new do |s|
-  s.name = 'TekoFirebaseFirestore'
+  s.name                   = 'TekoFirebaseFirestore'
+  s.module_name            = 'FirebaseFirestore'
   s.version                = firebase_firestore_version
   s.summary                = 'A replica Firebase Firestore podspec.'
   s.description            = 'A replica Firebase Firestore podspec that provides pre-compiled binaries/frameworks instead'
