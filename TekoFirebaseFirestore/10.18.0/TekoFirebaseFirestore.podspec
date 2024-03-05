@@ -101,8 +101,8 @@ Pod::Spec.new do |s|
 
   # WithLeveldb Pod deterministically gets all of FirebaseFirestore *and* leveldb
   s.subspec 'WithLeveldb' do |withdb|
-    withdb.dependency            'FirebaseFirestore/Base'
-    withdb.vendored_frameworks = "FirebaseFirestore/*leveldb*"
-    withdb.preserve_paths      = "FirebaseFirestore/*leveldb*"
+    withdb.dependency            'TekoFirebaseFirestore/Base'
+    withdb.vendored_frameworks = "TekoFirebaseFirestore/*leveldb*"
+    withdb.preserve_paths      = "TekoFirebaseFirestore/*leveldb*"
   end
 end
