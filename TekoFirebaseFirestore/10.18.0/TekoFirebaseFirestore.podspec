@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
 
     if !skip_leveldb
       Pod::UI.puts "#{autodb.name}: subspec would include leveldb if used directly or by default."
-      autodb.dependency 'FirebaseFirestore/WithLeveldb'
+      autodb.dependency 'TekoFirebaseFirestore/WithLeveldb'
     end
   end
 
