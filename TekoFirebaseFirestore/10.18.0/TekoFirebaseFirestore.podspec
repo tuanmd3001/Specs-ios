@@ -39,12 +39,6 @@ Pod::Spec.new do |s|
     frameworksBase = Dir.glob("FirebaseFirestore/*.xcframework").select do |name|
       if name.include?('leveldb')
         false
-      elsif hasCloudFirestore && name.include?('FirebaseFirestoreSwift')
-        false
-      elsif hasRNFBFirestore && name.include?('FirebaseFirestoreSwift')
-        false
-      elsif ENV["SKIP_FIREBASE_FIRESTORE_SWIFT"] && name.include?('FirebaseFirestoreSwift')
-        false
       else
         true
       end
