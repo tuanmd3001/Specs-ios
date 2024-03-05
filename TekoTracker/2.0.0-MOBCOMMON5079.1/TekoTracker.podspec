@@ -6,6 +6,9 @@
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
 
+firebase_firestore_git = 'https://github.com/invertase/firestore-ios-sdk-frameworks.git'
+firebase_firestore_version = '10.18.0'
+
 Pod::Spec.new do |s|
   s.name             = 'TekoTracker'
   s.version          = '2.0.0-MOBCOMMON5079.1'
@@ -49,8 +52,8 @@ TODO: Add long description of the pod here.
   s.dependency 'ReachabilitySwift'
   s.dependency 'RxSwift', '~> 5.0'
   s.dependency 'NSObject+Rx'
-  s.dependency 'FirebaseFirestore', '~> 10.18'
-  s.dependency 'SwiftFootprint', '~> 1.8', { :git => 'https://github.com/invertase/firestore-ios-sdk-frameworks.git', :tag => firebase_firestore_version }
+  s.dependency 'FirebaseFirestore', { :git => firebase_firestore_git, :tag => firebase_firestore_version }
+  s.dependency 'SwiftFootprint', '~> 1.8'
   s.dependency 'TerraInstancesManager', '~> 2.1'
   
   # Bridge
