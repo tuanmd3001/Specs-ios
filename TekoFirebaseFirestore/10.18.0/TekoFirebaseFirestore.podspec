@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
 
   # Base Pod gets everything except leveldb, which if included here may collide with inclusions elsewhere
   s.subspec 'Base' do |base|
-    frameworksBase = Dir.glob("TekoFirebaseFirestore/*.xcframework").select do |name|
+    frameworksBase = Dir.glob("FirebaseFirestore/*.xcframework").select do |name|
       if name.include?('leveldb')
         false
       elsif hasCloudFirestore && name.include?('FirebaseFirestoreSwift')
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
       skip_leveldb = true
     # Pod spec used directly
     elsif !skip_leveldb && current_definition_string.include?('FirebaseDatabase')
-      Pod::UI.puts "#{autodb.name}: Detected FirebaseDatabase module. Would not include leveldb."
+      Pod::UI.puts "Teko#{autodb.name}: Detected FirebaseDatabase module. Would not include leveldb."
       skip_leveldb = true
     # Umbrella pod spec
     elsif !skip_leveldb && current_definition_string.include?('Firebase/Database')
