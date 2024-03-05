@@ -6,9 +6,6 @@
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
 
-firebase_firestore_git = 'https://github.com/invertase/firestore-ios-sdk-frameworks.git'
-firebase_firestore_version = '10.18.0'
-
 Pod::Spec.new do |s|
   s.name             = 'TekoTracker'
   s.version          = '2.0.0-MOBCOMMON5079.1'
