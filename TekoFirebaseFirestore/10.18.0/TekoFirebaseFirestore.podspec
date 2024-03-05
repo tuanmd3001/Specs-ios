@@ -96,7 +96,7 @@ Pod::Spec.new do |s|
 
   # NoLeveldb Pod deterministically gets all of FirebaseFirestore *except* leveldb, to ensure no symbol collisions
   s.subspec 'WithoutLeveldb' do |nodb|
-    nodb.dependency 'FirebaseFirestore/Base'
+    nodb.dependency 'TekoFirebaseFirestore/Base'
   end
 
   # WithLeveldb Pod deterministically gets all of FirebaseFirestore *and* leveldb
