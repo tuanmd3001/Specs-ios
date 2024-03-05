@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
       skip_leveldb = true
     # Pod spec used directly
     elsif !skip_leveldb && current_definition_string.include?('FirebaseDatabase')
-      Pod::UI.puts "Teko#{autodb.name}: Detected FirebaseDatabase module. Would not include leveldb."
+      Pod::UI.puts "#{autodb.name}: Detected FirebaseDatabase module. Would not include leveldb."
       skip_leveldb = true
     # Umbrella pod spec
     elsif !skip_leveldb && current_definition_string.include?('Firebase/Database')
@@ -101,8 +101,8 @@ Pod::Spec.new do |s|
 
   # WithLeveldb Pod deterministically gets all of FirebaseFirestore *and* leveldb
   s.subspec 'WithLeveldb' do |withdb|
-    withdb.dependency            'TekoFirebaseFirestore/Base'
-    withdb.vendored_frameworks = "TekoFirebaseFirestore/*leveldb*"
-    withdb.preserve_paths      = "TekoFirebaseFirestore/*leveldb*"
+    withdb.dependency            'FirebaseFirestore/Base'
+    withdb.vendored_frameworks = "FirebaseFirestore/*leveldb*"
+    withdb.preserve_paths      = "FirebaseFirestore/*leveldb*"
   end
 end
