@@ -59,7 +59,7 @@ Pod::Spec.new do |s|
 
   # AutoLeveldb Pod attempts to determine if it should include leveldb automatically. Flaky in some instances.
   s.subspec 'AutodetectLeveldb' do |autodb|
-    autodb.dependency 'FirebaseFirestore/Base'
+    autodb.dependency 'TekoFirebaseFirestore/Base'
 
 
     skip_leveldb = false
