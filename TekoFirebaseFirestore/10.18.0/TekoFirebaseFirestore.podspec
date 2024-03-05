@@ -19,11 +19,9 @@ Pod::Spec.new do |s|
   # They may need updating periodically.
   s.ios.frameworks         = 'SystemConfiguration', 'UIKit'
   s.osx.frameworks         = 'SystemConfiguration'
-  s.tvos.frameworks        = 'SystemConfiguration', 'UIKit'
   s.library                = 'c++'
   s.ios.deployment_target  = '11.0'
   s.osx.deployment_target  = '10.13'
-  s.tvos.deployment_target = '11.0'
 
   s.default_subspecs       = "AutodetectLeveldb"
 
@@ -96,23 +94,7 @@ Pod::Spec.new do |s|
 
   # NoLeveldb Pod deterministically gets all of FirebaseFirestore *except* leveldb, to ensure no symbol collisions
   s.subspec 'WithoutLeveldb' do |nodb|
-    frameworksBase = Dir.glob("FirebaseFirestore/*.xcframework").select do |name|
-      if name.include?('leveldb')
-        false
-      elsif hasCloudFirestore && name.include?('FirebaseFirestoreSwift')
-        false
-      elsif hasRNFBFirestore && name.include?('FirebaseFirestoreSwift')
-        false
-      elsif ENV["SKIP_FIREBASE_FIRESTORE_SWIFT"] && name.include?('FirebaseFirestoreSwift')
-        false
-      else
-        true
-      end
-    end
-
-    nodb.dependency              'TekoFirebaseFirestore/Base'
-    base.vendored_frameworks   = frameworksBase
-    base.preserve_paths        = frameworksBase
+    nodb.dependency 'TekoFirebaseFirestore/Base'
   end
 
   # WithLeveldb Pod deterministically gets all of FirebaseFirestore *and* leveldb
