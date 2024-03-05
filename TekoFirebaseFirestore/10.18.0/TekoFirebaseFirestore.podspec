@@ -61,6 +61,7 @@ Pod::Spec.new do |s|
   s.subspec 'AutodetectLeveldb' do |autodb|
     autodb.dependency 'TekoFirebaseFirestore/Base'
 
+
     skip_leveldb = false
 
     if defined?($FirebaseFirestoreExcludeLeveldb)
