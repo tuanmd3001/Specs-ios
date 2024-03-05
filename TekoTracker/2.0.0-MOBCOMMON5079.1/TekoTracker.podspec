@@ -52,7 +52,7 @@ TODO: Add long description of the pod here.
   s.dependency 'ReachabilitySwift'
   s.dependency 'RxSwift', '~> 5.0'
   s.dependency 'NSObject+Rx'
-  s.dependency 'FirebaseFirestore', { :git => firebase_firestore_git, :tag => firebase_firestore_version }
+  s.dependency 'TekoFirebaseFirestore', '~> 10.18'
   s.dependency 'SwiftFootprint', '~> 1.8'
   s.dependency 'TerraInstancesManager', '~> 2.1'
   
