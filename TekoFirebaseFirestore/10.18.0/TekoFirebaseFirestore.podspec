@@ -33,8 +33,8 @@ Pod::Spec.new do |s|
   current_target_definition = Pod::Config.instance.podfile.send(:current_target_definition)
   current_definition_string = current_target_definition.to_hash.to_s
 
-  hasCloudFirestore         = current_definition_string.include?('cloud_firestore')
-  hasRNFBFirestore          = current_definition_string.include?('RNFBFirestore')
+  hasCloudFirestore = current_definition_string.include?('cloud_firestore')
+  hasRNFBFirestore = current_definition_string.include?('RNFBFirestore')
 
   # Base Pod gets everything except leveldb, which if included here may collide with inclusions elsewhere
   s.subspec 'Base' do |base|
@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
 
     if !skip_leveldb
       Pod::UI.puts "#{autodb.name}: subspec would include leveldb if used directly or by default."
-      autodb.dependency 'TekoFirebaseFirestore/WithLeveldb'
+      autodb.dependency 'FirebaseFirestore/WithLeveldb'
     end
   end
 
