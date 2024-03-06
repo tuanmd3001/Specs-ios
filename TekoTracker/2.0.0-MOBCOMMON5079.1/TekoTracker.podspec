@@ -49,7 +49,7 @@ TODO: Add long description of the pod here.
   s.dependency 'ReachabilitySwift'
   s.dependency 'RxSwift', '~> 5.0'
   s.dependency 'NSObject+Rx'
-  s.dependency 'TekoFirebaseFirestore', '~> 10.18'
+  s.dependency 'FirebaseFirestore' #, :git => 'https://github.com/invertase/firestore-ios-sdk-frameworks.git', :tag => '10.18.0'
   s.dependency 'SwiftFootprint', '~> 1.8'
   s.dependency 'TerraInstancesManager', '~> 2.1'
   
