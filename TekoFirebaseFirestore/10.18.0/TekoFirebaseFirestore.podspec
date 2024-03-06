@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
 
   # Base Pod gets everything except leveldb, which if included here may collide with inclusions elsewhere
   s.subspec 'Base' do |base|
-    frameworksBase = Dir.glob("FirebaseFirestore/*.xcframework").select do |name|
+    frameworksBase = Dir.glob('FirebaseFirestore/*.xcframework').select do |name|
       if name.include?('leveldb')
         false
       elsif hasCloudFirestore && name.include?('FirebaseFirestoreSwift')
@@ -100,7 +100,7 @@ Pod::Spec.new do |s|
   # WithLeveldb Pod deterministically gets all of FirebaseFirestore *and* leveldb
   s.subspec 'WithLeveldb' do |withdb|
     withdb.dependency            'TekoFirebaseFirestore/Base'
-    withdb.vendored_frameworks = "FirebaseFirestore/*leveldb*"
-    withdb.preserve_paths      = "FirebaseFirestore/*leveldb*"
+    withdb.vendored_frameworks = 'FirebaseFirestore/*leveldb*'
+    withdb.preserve_paths      = 'FirebaseFirestore/*leveldb*'
   end
 end
