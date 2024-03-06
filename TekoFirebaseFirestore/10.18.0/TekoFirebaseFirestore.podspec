@@ -38,15 +38,15 @@ Pod::Spec.new do |s|
   s.subspec 'Base' do |base|
     frameworksBase = Dir.glob('FirebaseFirestore/*.xcframework').select do |name|
       if name.include?('leveldb')
-        ''
+        next
       elsif hasCloudFirestore && name.include?('FirebaseFirestoreSwift')
-        ''
+        next
       elsif hasRNFBFirestore && name.include?('FirebaseFirestoreSwift')
-        ''
+        next
       elsif ENV["SKIP_FIREBASE_FIRESTORE_SWIFT"] && name.include?('FirebaseFirestoreSwift')
-        ''
+        next
       else
-        name
+        puts name
       end
     end
 
