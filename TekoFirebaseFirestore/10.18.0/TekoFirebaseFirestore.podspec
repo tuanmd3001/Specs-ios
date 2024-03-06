@@ -35,8 +35,8 @@ Pod::Spec.new do |s|
   hasRNFBFirestore          = current_definition_string.include?('RNFBFirestore')
 
   # Base Pod gets everything except leveldb, which if included here may collide with inclusions elsewhere
-  Pod::UI.puts "frameworksBase: #{Dir.glob("FirebaseFirestore")}"
-  Pod::UI.puts "frameworksBase: #{Dir.glob("FirebaseFirestore/*.xcframework")}"
+  Pod::UI.puts "FirebaseFirestore: #{Dir.glob("FirebaseFirestore/")}"
+  Pod::UI.puts "FirebaseFirestore/*.xcframework: #{Dir.glob("FirebaseFirestore/*.xcframework")}"
   s.subspec 'Base' do |base|
     frameworksBase = Dir.glob("FirebaseFirestore/*.xcframework").select do |name|
       Pod::UI.puts "name: #{name}"
