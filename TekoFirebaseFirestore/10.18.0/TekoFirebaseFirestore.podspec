@@ -34,30 +34,6 @@ Pod::Spec.new do |s|
   hasCloudFirestore         = current_definition_string.include?('cloud_firestore')
   hasRNFBFirestore          = current_definition_string.include?('RNFBFirestore')
 
-  # Base Pod gets everything except leveldb, which if included here may collide with inclusions elsewhere
-  Pod::UI.puts "FirebaseFirestore: #{Dir["FirebaseFirestore"]}"
-  s.subspec 'Base' do |base|
-    frameworksBase = Dir.glob("FirebaseFirestore/*.xcframework").select do |name|
-      Pod::UI.puts "name: #{name}"
-      if name.include?('leveldb')
-        false
-      elsif hasCloudFirestore && name.include?('FirebaseFirestoreSwift')
-        false
-      elsif hasRNFBFirestore && name.include?('FirebaseFirestoreSwift')
-        false
-      elsif ENV["SKIP_FIREBASE_FIRESTORE_SWIFT"] && name.include?('FirebaseFirestoreSwift')
-        false
-      else
-        true
-      end
-    end
-    Pod::UI.puts "frameworksBase: #{frameworksBase}"
-
-    base.vendored_frameworks  = frameworksBase
-    base.preserve_paths       = frameworksBase
-    base.resource             = 'FirebaseFirestore/Resources/*.bundle'
-  end
-
   # AutoLeveldb Pod attempts to determine if it should include leveldb automatically. Flaky in some instances.
   s.subspec 'AutodetectLeveldb' do |autodb|
     autodb.dependency 'TekoFirebaseFirestore/Base'
@@ -105,5 +81,29 @@ Pod::Spec.new do |s|
     withdb.dependency            'TekoFirebaseFirestore/Base'
     withdb.vendored_frameworks = "FirebaseFirestore/*leveldb*"
     withdb.preserve_paths      = "FirebaseFirestore/*leveldb*"
+  end
+
+  # Base Pod gets everything except leveldb, which if included here may collide with inclusions elsewhere
+  Pod::UI.puts "FirebaseFirestore: #{Dir["FirebaseFirestore"]}"
+  s.subspec 'Base' do |base|
+    frameworksBase = Dir.glob("FirebaseFirestore/*.xcframework").select do |name|
+      Pod::UI.puts "name: #{name}"
+      if name.include?('leveldb')
+        false
+      elsif hasCloudFirestore && name.include?('FirebaseFirestoreSwift')
+        false
+      elsif hasRNFBFirestore && name.include?('FirebaseFirestoreSwift')
+        false
+      elsif ENV["SKIP_FIREBASE_FIRESTORE_SWIFT"] && name.include?('FirebaseFirestoreSwift')
+        false
+      else
+        true
+      end
+    end
+    Pod::UI.puts "frameworksBase: #{frameworksBase}"
+
+    base.vendored_frameworks  = frameworksBase
+    base.preserve_paths       = frameworksBase
+    base.resource             = 'FirebaseFirestore/Resources/*.bundle'
   end
 end
