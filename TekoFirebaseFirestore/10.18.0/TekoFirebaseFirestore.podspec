@@ -44,8 +44,8 @@ Pod::Spec.new do |s|
       end
     end
 
-    base.vendored_frameworks  = frameworksBase
-    base.preserve_paths       = frameworksBase
+    base.vendored_frameworks  = "FirebaseFirestore/*.xcframework"
+    base.preserve_paths       = "FirebaseFirestore/*.xcframework"
     base.resource             = 'FirebaseFirestore/Resources/*.bundle'
   end
 
