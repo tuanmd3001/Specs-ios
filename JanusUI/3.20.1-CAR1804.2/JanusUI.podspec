@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
     s.dependency 'JanusFacebook', '~> 4.0'
     s.dependency 'JanusGoogle', '~> 3.5'
     s.dependency 'JanusApple', '~> 3.5'
-    s.dependency 'Apollo', '~> 3.4'
+    s.dependency 'Apollo', '3.6.0-CAR1804.1'
     s.dependency 'ApolloTheme', '~> 1.0'
     s.dependency 'TekoTracker', '~> 1.10'
     s.dependency 'TekLocalize', '~> 0.1'
