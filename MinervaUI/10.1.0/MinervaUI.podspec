@@ -56,5 +56,6 @@ Pod::Spec.new do |s|
     s.dependency 'SkeletonView', '~> 1.30'
     s.dependency 'TerraUtilities', '~> 1.0'
     s.dependency 'DifferenceKit', '~> 1.3'
+    s.dependency 'zpdk', '~> 0.1'
 
   end
