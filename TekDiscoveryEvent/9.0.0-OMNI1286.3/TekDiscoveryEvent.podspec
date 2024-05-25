@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
     s.dependency 'TekPolicyService', '~> 5.0'
     s.dependency 'TekSearchService', '~> 4.0'
     s.dependency 'TekDiscoveryCore', '5.1.0-OMNI1286.1'
-    s.dependency 'TekPpmService', '3.1.0-OMNI1286.2'
+    s.dependency 'TekPpmService', '3.1.0-OMNI1286.3'
     s.dependency 'TekTempiService', '~> 1.0'
     
   end
