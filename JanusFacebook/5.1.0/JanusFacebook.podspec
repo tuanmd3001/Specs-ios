@@ -30,6 +30,6 @@ Pod::Spec.new do |s|
     s.dependency 'FBSDKCoreKit', '~> 12.0'
     s.dependency 'FBSDKLoginKit', '~> 12.0'
     s.dependency 'FBSDKShareKit', '~> 12.0'
-    s.dependency 'Janus', '~> 4.0'
+    s.dependency 'Janus', '~> 4.1'
     
   end

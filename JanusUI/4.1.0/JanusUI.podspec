@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
     
     s.vendored_frameworks = 'JanusUI.xcframework'
   
-    s.dependency 'Janus', '~> 4.0'
+    s.dependency 'Janus', '~> 4.1'
     s.dependency 'JanusFacebook', '~> 5.1'
     s.dependency 'JanusGoogle', '~> 4.0'
     s.dependency 'JanusApple', '~> 4.0'
