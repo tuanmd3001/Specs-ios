@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
     s.dependency 'TerraInstancesManager', '~> 4.0'
     s.dependency 'Apollo', '~> 4.0'
     s.dependency 'ApolloTheme', '~> 2.0'
-    s.dependency 'TekDiscoveryEvent', '9.0.0-OMNI1286.2'
+    s.dependency 'TekDiscoveryEvent', '9.0.0-OMNI1286.3'
     s.dependency 'TekLocalize', '~> 1.0'
     s.dependency 'TekoTracker', '~> 2.0'
   end
