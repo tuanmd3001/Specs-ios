@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
     s.dependency 'Apollo', '~> 4.0'
     s.dependency 'ApolloTheme', '~> 2.0'
     s.dependency 'TerraInstancesManager', '~> 4.0'
-    s.dependency 'TekoTracker', '2.0.0'
+    s.dependency 'TekoTracker', '~> 2.0'
     s.dependency 'LoyaltyBridge', '~> 1.0'
     s.dependency 'RSBarcodes_Swift', '~> 5.2'
 
