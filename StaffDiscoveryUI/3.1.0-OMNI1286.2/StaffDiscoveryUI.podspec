@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '$(git config user.name)' => '$(git config user.email)' }
     s.source           = {
-                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/171828463',
+                           :http => 'https://api.github.com/repos/teko-vn/Specs-ios/releases/assets/173079508',
                            :type => 'zip',
                            :headers => [
                              'Authorization: token ' + ENV['GITHUB_USER_TOKEN'],
@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
     s.dependency 'HestiaBridgeWebView', '~> 2.0'
     s.dependency 'TerraJsBridge', '~> 1.0'
     s.dependency 'CommonBridgeCommand', '~> 1.0'
-    s.dependency 'TekoTracker', '~> 2.0'
+    s.dependency 'TekoTracker', '2.1.0-OMNI1286.1'
 
     s.dependency  'ShopFrontWebCoreSDK', '~> 1.0'
 
