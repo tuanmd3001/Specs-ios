@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   s.dependency 'TekoTracker', '~> 2.0'
 
   # Loyalty
-  s.dependency 'LoyaltyComponent', '~> 3.0'
+  s.dependency 'LoyaltyComponent', '~> 3.1'
 
   # Localize
   s.dependency 'TekLocalize', '~> 1.0'
